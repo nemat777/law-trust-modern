@@ -95,7 +95,7 @@ function Index() {
                 More than 21 years of experience
               </div>
 
-              <h1 className="mt-7 max-w-3xl font-display text-5xl font-bold leading-[1.03] tracking-[-0.035em] text-[#172522] sm:text-6xl lg:text-[4.8rem]">
+              <h1 className="mt-7 max-w-3xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.035em] text-[#172522] sm:text-6xl lg:text-[4.8rem]">
                 Good legal counsel should feel{" "}
                 <span className="italic font-normal text-[#9a6f2e]">personal.</span>
               </h1>
@@ -281,26 +281,7 @@ function Index() {
           </div>
         </section>
 
-        <section id="utilities" className="bg-[#f7f5f0]">
-          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
-            <div className="grid gap-5 md:grid-cols-3">
-              <Utility icon={Clock3} title="Office hours">
-                <p>Monday–Friday<br />8:30 am–5:00 pm</p>
-                <span>Evenings and weekends by appointment.</span>
-              </Utility>
-              <Utility icon={MapPin} title="Park Ridge office">
-                <p>1410 Higgins Road<br />Suite 204</p>
-                <a href="https://maps.google.com/?q=1410+Higgins+Road+Suite+204+Park+Ridge+IL+60068" target="_blank" rel="noreferrer">Get directions <ArrowRight /></a>
-              </Utility>
-              <a href="/client-resources" className="group rounded-2xl bg-[#e9e0cd] p-6 transition hover:bg-[#dfd1b4]">
-                <ShieldCheck className="h-5 w-5 text-[#9a6f2e]" />
-                <p className="mt-4 text-xs font-bold uppercase tracking-[0.14em] text-[#80602b]">Client resources</p>
-                <h3 className="mt-2 font-display text-xl font-bold text-[#172522]">Contact the office</h3>
-                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">View resources <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
-              </a>
-            </div>
-          </div>
-        </section>
+>
       </main>
 
       <SiteFooter />
