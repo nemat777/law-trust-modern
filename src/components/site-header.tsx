@@ -86,7 +86,7 @@ export function PracticeAreaPage({
   ctaTitle: string;
 }) {
   return (
-    <div className="min-h-screen bg-[#f7f5f0] text-[#18211f]">
+    <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
       <SiteHeader />
       <PageHero eyebrow="Practice area" title={title} text={heroText} />
       <main>
