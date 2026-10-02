@@ -38,7 +38,7 @@ function About() {
             </div>
 
             <div className="max-w-2xl">
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Tom P. Gregory</p>
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Tom P. Gregory, Esq.</p>
               <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">
                 A direct relationship with your attorney.
               </h2>
