@@ -249,31 +249,31 @@ function Index() {
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="rounded-[1.5rem] bg-[#f7f5f0] p-6 text-[#172522] shadow-2xl sm:p-8">
+            <form onSubmit={handleSubmit} className="rounded-[1.5rem] border border-[#172522]/10 bg-white p-6 shadow-sm sm:p-8">
               {submitted ? (
-                <div className="flex min-h-[430px] flex-col items-center justify-center text-center" role="status">
+                <div className="flex min-h-[420px] flex-col items-center justify-center text-center">
                   <span className="grid h-14 w-14 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e]"><Check className="h-7 w-7" /></span>
-                  <h2 className="mt-6 font-display text-3xl font-bold">Thanks for reaching out.</h2>
-                  <p className="mt-3 max-w-md text-sm leading-6 text-[#68736f]">
-                    This form is currently a demonstration of the consultation experience. Connect it to the firm's preferred inbox before publishing.
-                  </p>
+                  <h2 className="mt-6 font-display text-3xl font-bold text-[#172522]">Thanks for reaching out.</h2>
+                  <p className="mt-3 max-w-md text-sm leading-6 text-[#68736f]">This form is currently a demonstration and should be connected to the firm's preferred inbox before publishing.</p>
                   <Button type="button" variant="outline" className="mt-6 rounded-full" onClick={() => setSubmitted(false)}>Send another request</Button>
                 </div>
               ) : (
                 <>
-                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Confidential intake</p>
-                  <h2 className="mt-3 font-display text-3xl font-bold">Request a consultation</h2>
-                  <p className="mt-2 text-sm text-[#68736f]">Share the basics and we’ll follow up about next steps.</p>
-                  <div className="mt-7 grid gap-5 sm:grid-cols-2">
+                  <div className="border-b border-[#172522]/10 pb-5">
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Start here</p>
+                    <h2 className="mt-2 font-display text-3xl font-bold text-[#172522]">Request a consultation</h2>
+                    <p className="mt-2 max-w-xl text-sm leading-6 text-[#68736f]">Tell us a little about what you need. The office will follow up to discuss the matter and next steps.</p>
+                  </div>
+                  <div className="mt-6 grid gap-5 sm:grid-cols-2">
                     <Field label="Full name"><input required name="name" autoComplete="name" placeholder="Your name" className="field-light" /></Field>
                     <Field label="Phone"><input required name="phone" type="tel" autoComplete="tel" placeholder="(847) 000-0000" className="field-light" /></Field>
                     <Field label="Email"><input required name="email" type="email" autoComplete="email" placeholder="you@example.com" className="field-light" /></Field>
                     <Field label="Practice area"><select required name="practice" defaultValue="" className="field-light"><option value="" disabled>Select an area</option>{practices.map((practice) => <option key={practice.title}>{practice.title}</option>)}</select></Field>
-                    <div className="sm:col-span-2"><Field label="Briefly describe your matter"><textarea required name="message" rows={5} placeholder="Please avoid including highly sensitive information." className="field-light resize-none" /></Field></div>
+                    <div className="sm:col-span-2"><Field label="Briefly describe your matter"><textarea required name="message" rows={4} placeholder="Please avoid including highly sensitive information." className="field-light resize-none" /></Field></div>
                   </div>
-                  <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                    <Button type="submit" size="lg" className="rounded-full bg-[#b48a45] px-6 text-white hover:bg-[#966f34]">Submit request <ArrowRight /></Button>
-                    <span className="text-xs leading-5 text-[#7b8580]">Submitting this form does not create an attorney-client relationship.</span>
+                  <div className="mt-6 flex flex-col gap-3 border-t border-[#172522]/10 pt-5 sm:flex-row sm:items-center sm:justify-between">
+                    <p className="max-w-sm text-[11px] leading-5 text-[#7b8580]">Submitting this form does not create an attorney-client relationship.</p>
+                    <Button type="submit" size="lg" className="rounded-full bg-[#b48a45] px-6 text-white hover:bg-[#966f34]">Send request <ArrowRight className="ml-1 h-4 w-4" /></Button>
                   </div>
                 </>
               )}
