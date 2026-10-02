@@ -28,7 +28,7 @@ function Contact() {
 
       <main>
         <section className="bg-[#f7f5f0]">
-          <div className="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12 lg:py-20">
+          <div className="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 lg:grid-cols-[0.78fr_1.22fr] lg:gap-12 lg:py-20">
             <div>
               <div className="mb-7 max-w-md">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Get in touch</p>
@@ -61,7 +61,7 @@ function Contact() {
 
             <form
               onSubmit={(event) => { event.preventDefault(); setSent(true); }}
-              className="rounded-[1.5rem] border border-[#172522]/10 bg-white p-6 shadow-sm sm:p-8"
+              className="rounded-[1.5rem] border border-[#172522]/10 bg-white p-5 shadow-sm sm:p-8"
             >
               {sent ? (
                 <div className="flex min-h-[420px] flex-col items-center justify-center text-center">
