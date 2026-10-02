@@ -228,7 +228,7 @@ function Index() {
               {practices.map((practice, index) => {
                 const Icon = practice.icon;
                 return (
-                  <article key={practice.title} className="group bg-[#f7f5f0] p-6 transition duration-300 hover:bg-[#172522] hover:text-white sm:p-7">
+                  <article key={practice.title} className="group flex h-full flex-col bg-[#f7f5f0] p-6 transition duration-300 hover:bg-[#172522] hover:text-white sm:p-7">
                     <div className="flex items-center justify-between">
                       <span className="grid h-10 w-10 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e] transition group-hover:bg-[#b48a45] group-hover:text-white">
                         <Icon className="h-5 w-5" />
@@ -238,7 +238,7 @@ function Index() {
                     <p className="mt-7 text-[10px] font-bold uppercase tracking-[0.14em] text-[#8a918e] group-hover:text-[#d7b56d]">{practice.kicker}</p>
                     <h3 className="mt-2 font-display text-xl font-bold text-[#172522] group-hover:text-white">{practice.title}</h3>
                     <p className="mt-3 text-sm leading-6 text-[#65716d] group-hover:text-white/70">{practice.text}</p>
-                    <a href="#consultation" className="mt-6 inline-flex items-center gap-2 text-xs font-bold text-[#9a6f2e] group-hover:text-[#d7b56d]">
+                    <a href="#consultation" className="mt-auto pt-6 inline-flex items-center gap-2 text-xs font-bold text-[#9a6f2e] group-hover:text-[#d7b56d]">
                       Learn more <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </a>
                   </article>
