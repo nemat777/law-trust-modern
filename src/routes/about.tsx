@@ -1,3 +1,87 @@
-import { createFileRoute, Link } from "@tanstack/react-router"; import { ArrowRight, Check } from "lucide-react"; import attorneyPortrait from "@/assets/attorney-portrait.jpg"; import { PageHero, SiteFooter, SiteHeader, CTA } from "@/components/site-header";
-export const Route=createFileRoute("/about")({component:About,head: () => ({ meta: [{ title: "About Tom Gregory | Gregory Law Offices" }, { name: "description", content: "Learn about Tom P. Gregory and Gregory Law Offices' approach to direct, practical legal counsel." }] })});
-function About(){return <div className="min-h-screen bg-[#f7f5f0] text-[#18211f]"><SiteHeader/><PageHero eyebrow="About the firm" title="Experienced counsel. Straightforward advice." text="Gregory Law Offices is built around direct communication, careful preparation, and personal attention to the matters entrusted to the firm."/><main><section className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[.72fr_1.28fr] lg:items-center lg:py-24"><div className="relative max-w-md"><div className="absolute -inset-4 rounded-[2rem] bg-[#b48a45]/10 blur-2xl"/><img src={attorneyPortrait} alt="Attorney Tom P. Gregory" className="relative aspect-[4/5] w-full rounded-[1.75rem] object-cover object-top shadow-2xl" width={1024} height={1280}/></div><div><p className="text-xs font-bold uppercase tracking-[.18em] text-[#9a6f2e]">Tom P. Gregory</p><h2 className="mt-3 font-display text-4xl font-bold text-[#172522] sm:text-5xl">A direct relationship with your attorney.</h2><p className="mt-6 text-xl leading-8 text-[#3e4b46]">You should know who is handling your matter, understand the advice you are receiving, and have a clear sense of what comes next.</p><p className="mt-5 leading-7 text-[#68736f]">A John Marshall Law School graduate with more than 21 years of legal experience, Tom represents Illinois businesses, property owners, and families. His experience includes matters at the Circuit Court, Appellate Court, and Illinois Supreme Court levels.</p><Link to="/contact" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">Talk about your matter<ArrowRight className="h-4 w-4"/></Link></div></section><section className="border-y border-[#172522]/10 bg-white"><div className="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 md:grid-cols-3"><div><p className="text-xs font-bold uppercase tracking-[.16em] text-[#9a6f2e]">Direct communication</p><p className="mt-2 text-sm leading-6 text-[#63706b]">Straightforward conversations without unnecessary layers.</p></div><div><p className="text-xs font-bold uppercase tracking-[.16em] text-[#9a6f2e]">Practical advice</p><p className="mt-2 text-sm leading-6 text-[#63706b]">Legal recommendations grounded in the objective behind the matter.</p></div><div><p className="text-xs font-bold uppercase tracking-[.16em] text-[#9a6f2e]">Long-term perspective</p><p className="mt-2 text-sm leading-6 text-[#63706b]">Attention to today's issue without losing sight of what comes next.</p></div></div></section></main><CTA title="Have a legal question?"/><SiteFooter/></div>}
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
+import attorneyPortrait from "@/assets/attorney-portrait.jpg";
+import { PageHero, SiteFooter, SiteHeader, CTA } from "@/components/site-header";
+
+export const Route = createFileRoute("/about")({
+  component: About,
+  head: () => ({
+    meta: [
+      { title: "About Tom Gregory | Gregory Law Offices" },
+      { name: "description", content: "Learn about Tom P. Gregory and Gregory Law Offices' approach to direct, practical legal counsel." },
+    ],
+  }),
+});
+
+function About() {
+  return (
+    <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
+      <SiteHeader />
+      <PageHero
+        eyebrow="About the firm"
+        title="Experienced counsel. Straightforward advice."
+        text="Gregory Law Offices is built around direct communication, careful preparation, and personal attention to the matters entrusted to the firm."
+      />
+
+      <main>
+        <section className="bg-[#f7f5f0]">
+          <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-center lg:gap-16 lg:py-24">
+            <div className="relative mx-auto w-full max-w-md">
+              <div className="absolute -inset-5 rounded-[2rem] bg-[#b48a45]/10 blur-2xl" />
+              <img
+                src={attorneyPortrait}
+                alt="Attorney Tom P. Gregory"
+                className="relative aspect-[4/5] w-full rounded-[1.75rem] object-cover object-top shadow-2xl"
+                width={1024}
+                height={1280}
+              />
+            </div>
+
+            <div className="max-w-2xl">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Tom P. Gregory</p>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">
+                A direct relationship with your attorney.
+              </h2>
+              <p className="mt-6 text-xl leading-8 text-[#3e4b46]">
+                You should know who is handling your matter, understand the advice you are receiving, and have a clear sense of what comes next.
+              </p>
+              <p className="mt-5 text-base leading-7 text-[#68736f]">
+                A John Marshall Law School graduate with more than 21 years of legal experience, Tom represents Illinois businesses, property owners, and families. His experience includes matters at the Circuit Court, Appellate Court, and Illinois Supreme Court levels.
+              </p>
+              <Link to="/contact" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a] hover:text-[#b48a45]">
+                Talk about your matter <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-[#172522]/10 bg-white">
+          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
+            <div className="mb-10 max-w-2xl">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">How the firm works</p>
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">
+                A straightforward approach to legal work.
+              </h2>
+            </div>
+            <div className="grid gap-8 md:grid-cols-3">
+              {[
+                ["01", "Direct communication", "Straightforward conversations without unnecessary layers."],
+                ["02", "Practical advice", "Legal recommendations grounded in the objective behind the matter."],
+                ["03", "Long-term perspective", "Attention to today's issue without losing sight of what comes next."],
+              ].map(([number, title, text]) => (
+                <div key={title} className="border-t border-[#172522]/10 pt-5">
+                  <span className="font-display text-sm font-bold text-[#b48a45]">{number}</span>
+                  <h3 className="mt-3 font-display text-xl font-bold text-[#172522]">{title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-[#63706b]">{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <CTA title="Have a legal question?" />
+      <SiteFooter />
+    </div>
+  );
+}
