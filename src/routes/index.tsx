@@ -175,16 +175,31 @@ function Index() {
         </section>
 
         <section className="border-y border-[#172522]/10 bg-white">
-          <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-24">
-            <div className="max-w-2xl">
+          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:py-20">
+            <div className="max-w-xl">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Why Gregory Law Offices</p>
-              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Practical counsel. Personal attention.</h2>
-              <p className="mt-5 text-base leading-7 text-[#63706b]">Legal advice should be understandable, responsive, and connected to the real objective behind the matter.</p>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">A small firm, with your matter in view.</h2>
+              <p className="mt-5 text-base leading-7 text-[#63706b]">
+                The firm works with clients on the legal issues that sit behind important business, property, estate, and dispute-related decisions. The emphasis is on understanding the matter, preparing carefully, and giving clients a clear sense of the choices ahead.
+              </p>
             </div>
-            <div className="mt-12 grid gap-8 md:grid-cols-3">
-              <div><p className="font-display text-xl font-bold text-[#172522]">Direct communication</p><p className="mt-3 text-sm leading-6 text-[#68736f]">Straightforward conversations without unnecessary layers.</p></div>
-              <div><p className="font-display text-xl font-bold text-[#172522]">Practical advice</p><p className="mt-3 text-sm leading-6 text-[#68736f]">Recommendations grounded in the business, property, family, or dispute at hand.</p></div>
-              <div><p className="font-display text-xl font-bold text-[#172522]">Long-term perspective</p><p className="mt-3 text-sm leading-6 text-[#68736f]">Attention to today's issue while keeping the next decision in view.</p></div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
+                <p className="font-display text-lg font-bold text-[#172522]">One attorney, one relationship</p>
+                <p className="mt-2 text-sm leading-6 text-[#68736f]">A personal point of contact for questions, decisions, and next steps.</p>
+              </div>
+              <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
+                <p className="font-display text-lg font-bold text-[#172522]">Focused practice</p>
+                <p className="mt-2 text-sm leading-6 text-[#68736f]">Five core areas that cover business, property, planning, probate, and civil disputes.</p>
+              </div>
+              <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
+                <p className="font-display text-lg font-bold text-[#172522]">Illinois experience</p>
+                <p className="mt-2 text-sm leading-6 text-[#68736f]">More than 21 years of legal experience, including matters at three levels of Illinois courts.</p>
+              </div>
+              <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
+                <p className="font-display text-lg font-bold text-[#172522]">Park Ridge office</p>
+                <p className="mt-2 text-sm leading-6 text-[#68736f]">A local office serving clients throughout Illinois.</p>
+              </div>
             </div>
           </div>
         </section>
