@@ -2,7 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Building2 } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
-export const Route = createFileRoute("/practice-areas/real-estate")({ component: Page });
+export const Route = createFileRoute("/practice-areas/real-estate")({
+  component: Page,
+  head: () => ({
+    meta: [
+      { title: "Real Estate Attorney | Gregory Law Offices" },
+      { name: "description", content: "Real estate counsel for purchases, sales, leases, closings, and property disputes in Illinois." },
+    ],
+  }),
+});
 
 function Page() {
   return <PracticeAreaPage
