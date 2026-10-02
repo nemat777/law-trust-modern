@@ -140,7 +140,6 @@ export function PracticeAreaPage({
           </div>
         </section>
       </main>
-      <CTA title={ctaTitle} />
       <SiteFooter />
     </div>
   );
