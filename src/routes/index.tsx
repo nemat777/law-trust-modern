@@ -12,6 +12,7 @@ import {
   Menu,
   Phone,
   Scale,
+  ShieldCheck,
   X,
 } from "lucide-react";
 
@@ -196,8 +197,6 @@ function Index() {
                     <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#d7b56d]">Tom P. Gregory</p>
                     <p className="mt-2 font-display text-2xl font-bold sm:text-3xl">Experienced counsel. Straightforward advice.</p>
                   </div>
-                </div>
-              </div>
                 </div>
               </div>
             </aside>
