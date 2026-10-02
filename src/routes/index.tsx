@@ -125,7 +125,7 @@ function Index() {
                 <div className="relative overflow-hidden rounded-[1.5rem]">
                   <img
                     src={attorneyPortrait}
-                    alt="Attorney Tom P. Gregory"
+                    alt="Attorney Tom P. Gregory, Esq."
                     className="aspect-[4/5] w-full object-cover object-top"
                     width={1024}
                     height={1280}
