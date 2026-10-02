@@ -67,3 +67,12 @@ export function PageHero({ eyebrow, title, text }: { eyebrow: string; title: str
     </section>
   );
 }
+
+
+export function SiteFooter() {
+  return <footer className="bg-[#101b19] text-white/55"><div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-10 text-xs sm:px-8 lg:flex-row lg:justify-between"><div><p className="font-display text-lg font-bold text-white">Gregory Law Offices, Ltd.</p><p className="mt-2">Serving Illinois businesses, property owners, and families from Park Ridge.</p></div><div className="lg:text-right"><p>(847) 692-9900 · 1410 Higgins Road, Suite 204, Park Ridge, IL 60068</p><p className="mt-2">© 2026 Gregory Law Offices, Ltd. · Attorney advertising.</p></div></div></footer>;
+}
+
+export function CTA({ title = "Have a legal question?" }: { title?: string }) {
+  return <section className="bg-[#e9e0cd]"><div className="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-14 sm:px-8 md:flex-row md:items-center md:justify-between"><div><p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Have a legal question?</p><h2 className="mt-2 font-display text-3xl font-bold text-[#172522]">{title}</h2></div><Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#b48a45] px-6 py-3 font-semibold text-white">Start a conversation <span aria-hidden="true">→</span></Link></div></section>;
+}
