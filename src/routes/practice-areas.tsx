@@ -2,7 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, BriefcaseBusiness, Building2, FileText, Landmark, Scale } from "lucide-react";
 import { PageHero, SiteFooter, SiteHeader, CTA } from "@/components/site-header";
 
-export const Route = createFileRoute("/practice-areas")({ component: PracticeAreas });
+export const Route = createFileRoute("/practice-areas")({
+  component: PracticeAreas,
+  head: () => ({
+    meta: [
+      { title: "Practice Areas | Gregory Law Offices" },
+      { name: "description", content: "Explore Gregory Law Offices' five core practice areas: business, real estate, estate planning, probate, and civil litigation." },
+    ],
+  }),
+});
 
 const groups = [
   {
