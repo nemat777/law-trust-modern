@@ -75,6 +75,7 @@ export function PracticeAreaPage({
   introTitle,
   introText,
   matters,
+  reasons = [],
   ctaTitle,
 }: {
   icon: LucideIcon;
@@ -99,6 +100,22 @@ export function PracticeAreaPage({
               <h2 className="mt-6 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">{introTitle}</h2>
               <p className="mt-5 text-base leading-8 text-[#63706b]">{introText}</p>
             </div>
+
+            {reasons.length > 0 && (
+              <div className="mt-12 border-t border-[#172522]/10 pt-10">
+                <div className="max-w-2xl">
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">When clients typically call</p>
+                  <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">Know when it is worth bringing us in.</h3>
+                </div>
+                <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {reasons.map((reason) => (
+                    <div key={reason} className="rounded-2xl bg-[#ece9e1] p-5">
+                      <p className="text-sm leading-6 text-[#35423d]">{reason}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div className="mt-12 border-t border-[#172522]/10 pt-10">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
@@ -146,7 +163,49 @@ export function PracticeAreaPage({
 }
 
 export function SiteFooter() {
-  return <footer className="bg-[#101b19] text-white/55"><div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-10 text-xs sm:px-8 lg:flex-row lg:justify-between"><div><p className="font-display text-lg font-bold text-white">Gregory Law Offices, Ltd.</p><p className="mt-2">Serving Illinois businesses, property owners, and families from Park Ridge.</p></div><div className="lg:text-right"><p>(847) 692-9900 · 1410 Higgins Road, Suite 204, Park Ridge, IL 60068</p><p className="mt-2">© 2026 Gregory Law Offices, Ltd. · Attorney advertising.</p></div></div></footer>;
+  const links = [
+    ["Practice Areas", "/practice-areas"],
+    ["About Tom", "/about"],
+    ["Contact", "/contact"],
+    ["Client Resources", "/client-resources"],
+    ["Privacy", "/privacy"],
+    ["Disclaimer", "/disclaimer"],
+    ["Accessibility", "/accessibility"],
+  ] as const;
+
+  return (
+    <footer className="bg-[#101b19] text-white/55">
+      <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_0.8fr]">
+          <div>
+            <p className="font-display text-xl font-bold text-white">Gregory Law Offices, Ltd.</p>
+            <p className="mt-3 max-w-md text-sm leading-6">Serving Illinois businesses, property owners, and families from Park Ridge.</p>
+            <div className="mt-5 text-sm leading-6">
+              <p>1410 Higgins Road, Suite 204</p>
+              <p>Park Ridge, IL 60068</p>
+              <a className="mt-2 inline-block text-[#d7b56d] hover:text-white" href="tel:8476929900">(847) 692-9900</a>
+            </div>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#d7b56d]">Explore</p>
+            <nav className="mt-4 grid grid-cols-2 gap-x-6 gap-y-3 text-sm" aria-label="Footer navigation">
+              {links.slice(0, 4).map(([label, href]) => <Link key={href} to={href} className="hover:text-white">{label}</Link>)}
+            </nav>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#d7b56d]">Legal</p>
+            <nav className="mt-4 grid gap-3 text-sm" aria-label="Legal navigation">
+              {links.slice(4).map(([label, href]) => <Link key={href} to={href} className="hover:text-white">{label}</Link>)}
+            </nav>
+          </div>
+        </div>
+        <div className="mt-10 border-t border-white/10 pt-5 text-xs leading-5">
+          <p>© 2026 Gregory Law Offices, Ltd. · Attorney advertising.</p>
+          <p className="mt-2 max-w-4xl">Information on this website is for general informational purposes and is not legal advice. Viewing this website or contacting the firm does not create an attorney-client relationship.</p>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export function CTA({ title = "Have a legal question?" }: { title?: string }) {
