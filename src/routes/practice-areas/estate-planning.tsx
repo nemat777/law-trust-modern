@@ -1,5 +1,17 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import { SiteShell, PageIntro, ContactCta } from "@/components/site-shell";
-export const Route=createFileRoute("/practice-areas/estate-planning")({component:Page});
-function Page(){return <SiteShell><PageIntro eyebrow="Practice area" title="Estate Planning" text="Plan ahead with clarity and intention."/><main className="mx-auto max-w-5xl px-5 py-16 sm:px-8 lg:py-24"><div className="grid gap-12 lg:grid-cols-[1.15fr_.85fr]"><div><p className="text-lg leading-8 text-[#4d5a55]">Estate planning is about more than documents. It is about putting a thoughtful plan in place for the people and priorities that matter to you.</p><h2 className="mt-10 font-display text-3xl font-bold text-[#172522]">How we can help</h2><div className="mt-6 space-y-3"><div className="rounded-2xl border border-[#172522]/10 bg-white p-5 text-[#44504c]"><span className="font-semibold">Wills and trusts</span></div><div className="rounded-2xl border border-[#172522]/10 bg-white p-5 text-[#44504c]"><span className="font-semibold">Powers of attorney</span></div><div className="rounded-2xl border border-[#172522]/10 bg-white p-5 text-[#44504c]"><span className="font-semibold">Estate and asset planning</span></div><div className="rounded-2xl border border-[#172522]/10 bg-white p-5 text-[#44504c]"><span className="font-semibold">Updating an existing plan</span></div></div></div><aside className="h-fit rounded-3xl bg-[#172522] p-7 text-white"><p className="text-xs font-bold uppercase tracking-[.16em] text-[#d7b56d]">Next step</p><h2 className="mt-3 font-display text-2xl font-bold">Have a question about your matter?</h2><p className="mt-3 leading-6 text-white/60">Start a conversation with the office to discuss your situation and possible next steps.</p><Link to="/contact" className="mt-7 inline-flex items-center gap-2 rounded-full bg-[#b48a45] px-5 py-3 font-semibold">Contact the office <ArrowRight className="h-4 w-4"/></Link></aside></div><Link to="/practice-areas" className="mt-12 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]"><ArrowLeft className="h-4 w-4"/> All practice areas</Link></main><ContactCta/></SiteShell>}
+import { createFileRoute } from "@tanstack/react-router";
+import { FileText } from "lucide-react";
+import { PracticeAreaPage } from "@/components/site-header";
+
+export const Route = createFileRoute("/practice-areas/estate-planning")({ component: Page });
+
+function Page() {
+  return <PracticeAreaPage
+    icon={FileText}
+    title="Estate Planning"
+    heroText="Plan ahead with clarity and intention."
+    introTitle="Plan ahead with clarity."
+    introText="Estate planning is about more than documents. It is about putting a thoughtful plan in place for the people and priorities that matter to you."
+    matters={["Wills and trusts","Powers of attorney","Estate and asset planning","Updating an existing plan"]}
+    ctaTitle="Ready to talk about an estate plan?"
+  />;
+}
