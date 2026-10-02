@@ -18,6 +18,7 @@ function RealEstate() {
     introTitle="Property decisions deserve careful review."
     introText="Real estate documents can carry long-term consequences. Gregory Law Offices approaches transactions and disputes with attention to the documents, deadlines, practical objectives, and issues that can affect your position."
     matters={["Purchases and sales", "Leases and landlord-tenant matters", "Closings and transaction documents", "Real estate disputes", "Ownership and title questions", "Other property-related matters"]}
+    reasons={["You are buying, selling, leasing, or otherwise changing an interest in property.","A closing, title issue, lease term, or document raises a question you want reviewed.","A property disagreement is becoming difficult to resolve on your own."]}
     ctaTitle="Have a property matter to discuss?"
   />;
 }
