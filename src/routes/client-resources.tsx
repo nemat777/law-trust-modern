@@ -27,9 +27,9 @@ function ClientResources() {
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
             <div className="mb-10 max-w-2xl">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Office information</p>
-              <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Two easy ways to reach us.</h2>
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Reach the office directly.</h2>
               <p className="mt-4 text-base leading-7 text-[#63706b]">
-                For questions about an existing matter or to discuss a new legal matter, contact the office directly.
+                For an existing matter or a new legal question, contact the office directly by phone, email, or at the Park Ridge office.
               </p>
             </div>
 
