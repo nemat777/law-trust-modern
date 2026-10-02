@@ -1,5 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight, MapPin, Phone } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 import { PageHero, SiteFooter, SiteHeader, CTA } from "@/components/site-header";
 
 export const Route = createFileRoute("/client-resources")({
