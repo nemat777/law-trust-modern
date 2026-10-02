@@ -107,10 +107,10 @@ function Index() {
           </a>
 
           <nav className="hidden items-center gap-8 text-sm font-medium text-[#44504c] lg:flex" aria-label="Main navigation">
-            <a href="#practice" className="transition hover:text-[#9a6f2e]">Practice Areas</a>
-            <a href="#attorney" className="transition hover:text-[#9a6f2e]">About Tom</a>
-            <a href="#consultation" className="transition hover:text-[#9a6f2e]">Contact</a>
-            <a href="#utilities" className="transition hover:text-[#9a6f2e]">Client Resources</a>
+            <a href="/practice-areas" className="transition hover:text-[#9a6f2e]">Practice Areas</a>
+            <a href="/about" className="transition hover:text-[#9a6f2e]">About Tom</a>
+            <a href="/contact" className="transition hover:text-[#9a6f2e]">Contact</a>
+            <a href="/client-resources" className="transition hover:text-[#9a6f2e]">Client Resources</a>
           </nav>
 
           <div className="flex items-center gap-2">
