@@ -2,7 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FileText } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
-export const Route = createFileRoute("/practice-areas/estate-planning")({ component: Page });
+export const Route = createFileRoute("/practice-areas/estate-planning")({
+  component: Page,
+  head: () => ({
+    meta: [
+      { title: "Estate Planning Attorney | Gregory Law Offices" },
+      { name: "description", content: "Estate planning counsel for wills, trusts, powers of attorney, and related planning in Illinois." },
+    ],
+  }),
+});
 
 function Page() {
   return <PracticeAreaPage
