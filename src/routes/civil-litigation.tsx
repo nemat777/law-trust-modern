@@ -18,6 +18,7 @@ function CivilLitigation() {
     introTitle="Know your position before deciding your next move."
     introText="When a disagreement becomes a legal dispute, the facts, documents, deadlines, and available remedies all matter. The firm represents clients in civil matters involving business, contracts, real estate, and related disputes."
     matters={["Business disputes", "Contract disputes", "Real estate disputes", "Commercial litigation", "Pre-suit evaluation and strategy", "Other civil matters"]}
+    reasons={["A dispute has escalated beyond an ordinary disagreement and legal action is being considered.","You received a demand, claim, or lawsuit and need to understand your position.","You are considering whether to pursue or defend a civil claim and want to evaluate the available options."]}
     ctaTitle="Have a dispute that needs attention?"
   />;
 }
