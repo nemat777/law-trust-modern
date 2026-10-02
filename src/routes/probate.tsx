@@ -18,6 +18,7 @@ function Probate() {
     introTitle="A clear path for families and fiduciaries."
     introText="Gregory Law Offices assists executors, administrators, beneficiaries, and families with the legal work involved in administering an estate and addressing questions that arise along the way."
     matters={["Estate administration", "Executor representation", "Administrator representation", "Beneficiary questions", "Estate-related disputes", "Other probate matters"]}
+    reasons={["You have been named executor or administrator and need help understanding the process.","You are a beneficiary with questions about an estate or its administration.","A disagreement involving an estate needs to be evaluated and addressed."]}
     ctaTitle="Need help navigating an estate?"
   />;
 }
