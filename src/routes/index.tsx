@@ -9,16 +9,14 @@ import {
   FileText,
   Landmark,
   MapPin,
-  Menu,
   Phone,
   Scale,
   ShieldCheck,
-  X,
 } from "lucide-react";
 
 import attorneyPortrait from "@/assets/attorney-portrait.jpg";
-import logo from "@/assets/gregory-logo.png";
 import { Button } from "@/components/ui/button";
+import { SiteHeader, SiteFooter } from "@/components/site-header";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -86,68 +84,7 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
-      <div className="bg-[#172522] text-white/80">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2.5 text-[11px] sm:px-8">
-          <span className="hidden sm:block">Park Ridge · Illinois</span>
-          <span>Monday–Friday, 8:30 am–5:00 pm</span>
-          <a className="font-semibold text-[#d7b56d] transition hover:text-white" href="tel:8476929900">
-            (847) 692-9900
-          </a>
-        </div>
-      </div>
-
-      <header className="sticky top-0 z-40 border-b border-[#172522]/10 bg-[#f7f5f0]/95 backdrop-blur-xl">
-        <div className="mx-auto flex h-[82px] max-w-7xl items-center justify-between gap-6 px-5 sm:px-8">
-          <a href="#top" className="flex items-center gap-3" aria-label="Gregory Law Offices home">
-            <img src={logo} alt="Gregory Law Offices logo" className="h-12 w-12 object-contain" width={102} height={106} />
-            <span className="leading-tight">
-              <span className="block font-display text-lg font-bold tracking-[-0.02em] text-[#172522]">Gregory Law Offices</span>
-              <span className="block text-[10px] font-semibold uppercase tracking-[0.16em] text-[#9a6f2e]">Park Ridge · Illinois</span>
-            </span>
-          </a>
-
-          <nav className="hidden items-center gap-8 text-sm font-medium text-[#44504c] lg:flex" aria-label="Main navigation">
-            <a href="/practice-areas" className="transition hover:text-[#9a6f2e]">Practice Areas</a>
-            <a href="/about" className="transition hover:text-[#9a6f2e]">About Tom</a>
-            <a href="/contact" className="transition hover:text-[#9a6f2e]">Contact</a>
-            <a href="/client-resources" className="transition hover:text-[#9a6f2e]">Client Resources</a>
-          </nav>
-
-          <div className="flex items-center gap-2">
-            <Button asChild className="hidden rounded-full bg-[#b48a45] px-5 text-white shadow-sm hover:bg-[#966f34] sm:inline-flex">
-              <a href="#consultation">Start a Conversation <ArrowRight /></a>
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="text-[#172522] hover:bg-[#172522]/5 lg:hidden"
-              onClick={() => setMenuOpen((open) => !open)}
-              aria-label={menuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={menuOpen}
-            >
-              {menuOpen ? <X /> : <Menu />}
-            </Button>
-          </div>
-        </div>
-
-        {menuOpen && (
-          <nav className="grid border-t border-[#172522]/10 bg-[#f7f5f0] px-5 py-3 lg:hidden" aria-label="Mobile navigation">
-            {[["Practice Areas", "/practice-areas"], ["About Tom", "/about"], ["Contact", "/contact"], ["Client Resources", "/client-resources"]].map(
-              ([label, href]) => (
-                <a
-                  key={href}
-                  href={href}
-                  onClick={() => setMenuOpen(false)}
-                  className="border-b border-[#172522]/10 py-4 text-sm font-medium text-[#34413d] last:border-0"
-                >
-                  {label}
-                </a>
-              ),
-            )}
-          </nav>
-        )}
-      </header>
-
+      <SiteHeader />
       <main id="top">
         <section className="relative overflow-hidden border-b border-[#172522]/10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_15%,rgba(180,138,69,0.13),transparent_30%),radial-gradient(circle_at_8%_90%,rgba(39,67,61,0.08),transparent_32%)]" />
@@ -366,18 +303,8 @@ function Index() {
         </section>
       </main>
 
-      <footer className="border-t border-white/10 bg-[#101b19] text-white/50">
-        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-10 text-xs sm:px-8 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <p className="font-display text-lg font-bold text-white">Gregory Law Offices, Ltd.</p>
-            <p className="mt-2">Serving Illinois businesses, property owners, and families from Park Ridge.</p>
-          </div>
-          <div className="lg:text-right">
-            <p className="text-white/65">(847) 692-9900 · 1410 Higgins Road, Suite 204, Park Ridge, IL 60068</p>
-            <p className="mt-2">© 2026 Gregory Law Offices, Ltd. · Attorney advertising · Prior results do not guarantee similar outcomes.</p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
+
     </div>
   );
 }
