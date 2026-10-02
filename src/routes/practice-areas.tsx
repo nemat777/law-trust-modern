@@ -32,7 +32,7 @@ const groups = [
 
 function PracticeAreas() {
   return (
-    <div className="min-h-screen bg-[#f7f5f0] text-[#18211f]">
+    <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
       <SiteHeader />
       <PageHero
         eyebrow="How we help"
@@ -43,7 +43,7 @@ function PracticeAreas() {
       <main>
         <section className="bg-white">
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
-            <div className="max-w-3xl">
+            <div className="max-w-2xl">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Our practice areas</p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Five areas, clearly organized.</h2>
               <p className="mt-5 text-base leading-8 text-[#63706b]">
