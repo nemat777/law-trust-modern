@@ -2,7 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Landmark } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
-export const Route = createFileRoute("/practice-areas/probate")({ component: Page });
+export const Route = createFileRoute("/practice-areas/probate")({
+  component: Page,
+  head: () => ({
+    meta: [
+      { title: "Probate Attorney | Gregory Law Offices" },
+      { name: "description", content: "Probate guidance for executors, administrators, beneficiaries, and families in Illinois." },
+    ],
+  }),
+});
 
 function Page() {
   return <PracticeAreaPage
