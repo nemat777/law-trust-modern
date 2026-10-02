@@ -81,8 +81,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Gregory Law Offices, Ltd." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        name: "Gregory Law Offices, Ltd.",
+        url: "https://law-trust-modern.kiannematollahi.workers.dev",
+        telephone: "+1-847-692-9900",
+        email: "tom@gregorylawoffices.com",
+        address: { "@type": "PostalAddress", streetAddress: "1410 Higgins Road, Suite 204", addressLocality: "Park Ridge", addressRegion: "IL", postalCode: "60068", addressCountry: "US" },
+        areaServed: "Illinois",
+      }),
+    }],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
