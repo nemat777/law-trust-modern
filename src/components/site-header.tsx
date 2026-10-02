@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X, type LucideIcon } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/gregory-logo.png";
 import { Button } from "@/components/ui/button";
@@ -68,6 +68,83 @@ export function PageHero({ eyebrow, title, text }: { eyebrow: string; title: str
   );
 }
 
+export function PracticeAreaPage({
+  icon: Icon,
+  title,
+  heroText,
+  introTitle,
+  introText,
+  matters,
+  ctaTitle,
+}: {
+  icon: LucideIcon;
+  title: string;
+  heroText: string;
+  introTitle: string;
+  introText: string;
+  matters: string[];
+  ctaTitle: string;
+}) {
+  return (
+    <div className="min-h-screen bg-[#f7f5f0] text-[#18211f]">
+      <SiteHeader />
+      <PageHero eyebrow="Practice area" title={title} text={heroText} />
+      <main>
+        <section className="bg-white">
+          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
+            <div className="max-w-3xl">
+              <span className="grid h-12 w-12 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e]">
+                <Icon className="h-6 w-6" />
+              </span>
+              <h2 className="mt-6 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">{introTitle}</h2>
+              <p className="mt-5 text-base leading-8 text-[#63706b]">{introText}</p>
+            </div>
+
+            <div className="mt-12 border-t border-[#172522]/10 pt-10">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">How we can help</p>
+                  <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">Matters we handle</h3>
+                </div>
+                <p className="max-w-xl text-sm leading-6 text-[#68736f]">A focused range of legal matters, with advice tailored to the facts and practical goals of the situation.</p>
+              </div>
+
+              <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {matters.map((matter) => (
+                  <div key={matter} className="flex min-h-[92px] items-start gap-3 rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
+                    <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e]">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#b48a45]" />
+                    </span>
+                    <span className="text-sm font-semibold leading-6 text-[#35423d]">{matter}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#f7f5f0]">
+          <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:py-14">
+            <div className="flex flex-col gap-5 rounded-[1.5rem] bg-[#172522] p-7 text-white sm:p-9 md:flex-row md:items-center md:justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#d7b56d]">Next step</p>
+                <h2 className="mt-2 font-display text-2xl font-bold sm:text-3xl">{ctaTitle}</h2>
+                <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60">Start a conversation with the office to discuss your situation and possible next steps.</p>
+              </div>
+              <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
+                <Link to="/contact" className="inline-flex items-center justify-center rounded-full bg-[#b48a45] px-5 py-3 text-sm font-semibold text-white">Contact the office</Link>
+                <a href="tel:8476929900" className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/85">(847) 692-9900</a>
+              </div>
+            </div>
+            <Link to="/practice-areas" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">← All practice areas</Link>
+          </div>
+        </section>
+      </main>
+      <CTA title={ctaTitle} />
+      <SiteFooter />
+    </div>
+  );
+}
 
 export function SiteFooter() {
   return <footer className="bg-[#101b19] text-white/55"><div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-10 text-xs sm:px-8 lg:flex-row lg:justify-between"><div><p className="font-display text-lg font-bold text-white">Gregory Law Offices, Ltd.</p><p className="mt-2">Serving Illinois businesses, property owners, and families from Park Ridge.</p></div><div className="lg:text-right"><p>(847) 692-9900 · 1410 Higgins Road, Suite 204, Park Ridge, IL 60068</p><p className="mt-2">© 2026 Gregory Law Offices, Ltd. · Attorney advertising.</p></div></div></footer>;
