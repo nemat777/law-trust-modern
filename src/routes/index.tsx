@@ -238,12 +238,27 @@ function Index() {
                     <p className="mt-7 text-[10px] font-bold uppercase tracking-[0.14em] text-[#8a918e] group-hover:text-[#d7b56d]">{practice.kicker}</p>
                     <h3 className="mt-2 font-display text-xl font-bold text-[#172522] group-hover:text-white">{practice.title}</h3>
                     <p className="mt-3 text-sm leading-6 text-[#65716d] group-hover:text-white/70">{practice.text}</p>
-                    <a href="#consultation" className="mt-auto pt-6 inline-flex items-center gap-2 text-xs font-bold text-[#9a6f2e] group-hover:text-[#d7b56d]">
+                    <a href={practice.title === "Business" ? "/business" : practice.title === "Real Estate" ? "/real-estate" : practice.title === "Estate Planning" ? "/estate-planning" : practice.title === "Probate" ? "/probate" : "/civil-litigation"} className="mt-auto pt-6 inline-flex items-center gap-2 text-xs font-bold text-[#9a6f2e] group-hover:text-[#d7b56d]">
                       Learn more <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </a>
                   </article>
                 );
               })}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-[#172522]/10 bg-white">
+          <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-24">
+            <div className="max-w-2xl">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Why Gregory Law Offices</p>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Practical counsel. Personal attention.</h2>
+              <p className="mt-5 text-base leading-7 text-[#63706b]">Legal advice should be understandable, responsive, and connected to the real objective behind the matter.</p>
+            </div>
+            <div className="mt-12 grid gap-8 md:grid-cols-3">
+              <div><p className="font-display text-xl font-bold text-[#172522]">Direct communication</p><p className="mt-3 text-sm leading-6 text-[#68736f]">Straightforward conversations without unnecessary layers.</p></div>
+              <div><p className="font-display text-xl font-bold text-[#172522]">Practical advice</p><p className="mt-3 text-sm leading-6 text-[#68736f]">Recommendations grounded in the business, property, family, or dispute at hand.</p></div>
+              <div><p className="font-display text-xl font-bold text-[#172522]">Long-term perspective</p><p className="mt-3 text-sm leading-6 text-[#68736f]">Attention to today's issue while keeping the next decision in view.</p></div>
             </div>
           </div>
         </section>
@@ -349,11 +364,11 @@ function Index() {
                 <p>1410 Higgins Road<br />Suite 204</p>
                 <a href="https://maps.google.com/?q=1410+Higgins+Road+Suite+204+Park+Ridge+IL+60068" target="_blank" rel="noreferrer">Get directions <ArrowRight /></a>
               </Utility>
-              <a href="https://www.gregorylawoffices.com/itc/" target="_blank" rel="noreferrer" className="group rounded-2xl bg-[#e9e0cd] p-6 transition hover:bg-[#dfd1b4]">
+              <a href="/client-resources" className="group rounded-2xl bg-[#e9e0cd] p-6 transition hover:bg-[#dfd1b4]">
                 <ShieldCheck className="h-5 w-5 text-[#9a6f2e]" />
-                <p className="mt-4 text-xs font-bold uppercase tracking-[0.14em] text-[#80602b]">Existing clients</p>
-                <h3 className="mt-2 font-display text-xl font-bold text-[#172522]">Secure client payment portal</h3>
-                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">Open portal <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
+                <p className="mt-4 text-xs font-bold uppercase tracking-[0.14em] text-[#80602b]">Client resources</p>
+                <h3 className="mt-2 font-display text-xl font-bold text-[#172522]">Contact the office</h3>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">View resources <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
               </a>
             </div>
           </div>
