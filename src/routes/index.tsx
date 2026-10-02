@@ -279,7 +279,6 @@ function Index() {
           </div>
         </section>
 
->
       </main>
 
       <SiteFooter />
