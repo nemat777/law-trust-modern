@@ -62,7 +62,7 @@ function PracticeAreas() {
                     <span className="hidden text-xs font-semibold uppercase tracking-[0.12em] text-[#9a6f2e]/70 sm:block">{group.areas.length} {group.areas.length === 1 ? "area" : "areas"}</span>
                   </div>
 
-                  <div className={group.areas.length === 1 ? "grid" : "grid gap-4 md:grid-cols-2"}>
+                  <div className="grid gap-4 md:grid-cols-2">
                     {group.areas.map(([title, kicker, href, Icon, text], index) => (
                       <article key={title} className="group flex min-h-[245px] flex-col rounded-3xl border border-[#172522]/10 bg-[#f7f5f0] p-7 transition duration-300 hover:-translate-y-1 hover:bg-[#172522] hover:text-white hover:shadow-xl hover:shadow-[#172522]/8 sm:p-8">
                         <div className="flex items-center justify-between">
