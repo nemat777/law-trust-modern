@@ -131,7 +131,7 @@ function Index() {
                     height={1280}
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#172522] via-[#172522]/75 to-transparent px-6 pb-6 pt-20 text-white sm:px-8 sm:pb-8">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#d7b56d]">Tom P. Gregory</p>
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#d7b56d]">Tom P. Gregory, Esq.</p>
                     <p className="mt-2 font-display text-2xl font-bold sm:text-3xl">Experienced counsel. Straightforward advice.</p>
                   </div>
                 </div>
@@ -197,7 +197,7 @@ function Index() {
               <div className="absolute -inset-5 rounded-[2rem] bg-[#b48a45]/10 blur-2xl" />
               <img
                 src={attorneyPortrait}
-                alt="Attorney Tom P. Gregory"
+                alt="Attorney Tom P. Gregory, Esq."
                 className="relative aspect-[4/5] w-full rounded-[1.5rem] object-cover object-top shadow-2xl"
                 loading="lazy"
                 width={1024}
@@ -207,7 +207,7 @@ function Index() {
 
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Meet your attorney</p>
-              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Tom P. Gregory</h2>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Tom P. Gregory Esq.</h2>
               <p className="mt-6 max-w-2xl text-xl leading-8 text-[#3e4b46]">
                 You should not have to navigate a complicated legal issue without knowing who is on the other side of the phone.
               </p>
