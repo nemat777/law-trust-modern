@@ -12,7 +12,6 @@ import {
   Menu,
   Phone,
   Scale,
-  ShieldCheck,
   X,
 } from "lucide-react";
 
@@ -199,13 +198,6 @@ function Index() {
                   </div>
                 </div>
               </div>
-              <div className="absolute -bottom-5 -left-2 hidden rounded-2xl border border-[#172522]/10 bg-white p-4 shadow-xl sm:block lg:-left-8">
-                <div className="flex items-center gap-3">
-                  <span className="grid h-10 w-10 place-items-center rounded-full bg-[#f1eadb] text-[#9a6f2e]"><ShieldCheck className="h-5 w-5" /></span>
-                  <div>
-                    <p className="text-xs font-semibold text-[#172522]">A direct line to your attorney</p>
-                    <p className="mt-0.5 text-[11px] text-[#6b7671]">Park Ridge · Illinois</p>
-                  </div>
                 </div>
               </div>
             </aside>
