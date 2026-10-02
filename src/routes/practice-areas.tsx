@@ -12,8 +12,8 @@ const areas = [
 function PracticeAreas() {
   return <div className="min-h-screen bg-[#f7f5f0] text-[#18211f]"><SiteHeader/><PageHero eyebrow="How we help" title="Legal help for the moments that matter." text="Explore the firm's core practice areas and learn where Gregory Law Offices may be able to assist."/>
     <main className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
-      <div className="grid gap-5 md:grid-cols-2">
-        {areas.map(([title,kicker,href,Icon,text],i)=><article key={title} className="group rounded-3xl border border-[#172522]/10 bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-[#172522]/8 sm:p-9">
+      <div className="flex flex-wrap justify-center gap-5">
+        {areas.map(([title,kicker,href,Icon,text],i)=><article key={title} className="group w-full rounded-3xl border border-[#172522]/10 bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-[#172522]/8 sm:p-9 md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)]">
           <div className="flex items-center justify-between"><span className="grid h-12 w-12 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e]"><Icon className="h-5 w-5"/></span><span className="font-display text-sm text-[#b48a45]">0{i+1}</span></div>
           <p className="mt-8 text-[10px] font-bold uppercase tracking-[0.15em] text-[#8a918e]">{kicker}</p><h2 className="mt-2 font-display text-2xl font-bold text-[#172522]">{title}</h2>
           <p className="mt-4 max-w-xl leading-7 text-[#65716d]">{text}</p>
