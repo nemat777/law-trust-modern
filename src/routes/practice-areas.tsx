@@ -59,7 +59,7 @@ function PracticeAreas() {
               </p>
             </div>
 
-            <div className="mt-12 space-y-14">
+            <div className="mt-10 space-y-12">
               {groups.map((group) => (
                 <section key={group.label}>
                   <div className="mb-6 flex flex-col gap-2 border-b border-[#172522]/10 pb-5 sm:flex-row sm:items-end sm:justify-between">
@@ -72,7 +72,7 @@ function PracticeAreas() {
 
                   <div className="grid gap-4 md:grid-cols-2">
                     {group.areas.map(([title, kicker, href, Icon, text], index) => (
-                      <article key={title} className="group flex min-h-[245px] flex-col rounded-3xl border border-[#172522]/10 bg-[#f7f5f0] p-7 transition duration-300 hover:-translate-y-1 hover:bg-[#172522] hover:text-white hover:shadow-xl hover:shadow-[#172522]/8 sm:p-8">
+                      <article key={title} className="group flex min-h-[225px] flex-col rounded-3xl border border-[#172522]/10 bg-[#f7f5f0] p-6 transition duration-300 hover:-translate-y-1 hover:bg-[#172522] hover:text-white hover:shadow-xl hover:shadow-[#172522]/8 sm:p-7">
                         <div className="flex items-center justify-between">
                           <span className="grid h-12 w-12 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e] transition group-hover:bg-[#b48a45] group-hover:text-white">
                             <Icon className="h-5 w-5" />
