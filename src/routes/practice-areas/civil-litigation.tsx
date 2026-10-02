@@ -2,7 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Scale } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
-export const Route = createFileRoute("/practice-areas/civil-litigation")({ component: Page });
+export const Route = createFileRoute("/practice-areas/civil-litigation")({
+  component: Page,
+  head: () => ({
+    meta: [
+      { title: "Civil Litigation Attorney | Gregory Law Offices" },
+      { name: "description", content: "Civil litigation representation involving business, contract, real estate, and related disputes." },
+    ],
+  }),
+});
 
 function Page() {
   return <PracticeAreaPage
