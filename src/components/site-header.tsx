@@ -84,6 +84,7 @@ export function PracticeAreaPage({
   introTitle: string;
   introText: string;
   matters: string[];
+  reasons?: string[];
   ctaTitle: string;
 }) {
   return (
