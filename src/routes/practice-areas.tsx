@@ -70,9 +70,9 @@ function PracticeAreas() {
                     <span className="hidden text-xs font-semibold uppercase tracking-[0.12em] text-[#9a6f2e]/70 sm:block">{group.areas.length} {group.areas.length === 1 ? "area" : "areas"}</span>
                   </div>
 
-                  <div className="grid gap-4 md:grid-cols-2">
+                  <div className={group.areas.length === 1 ? "flex justify-center" : "grid gap-5 md:grid-cols-2"}>
                     {group.areas.map(([title, kicker, href, Icon, text], index) => (
-                      <article key={title} className="group flex min-h-[225px] flex-col rounded-3xl border border-[#172522]/10 bg-[#f7f5f0] p-6 transition duration-300 hover:-translate-y-1 hover:bg-[#172522] hover:text-white hover:shadow-xl hover:shadow-[#172522]/8 sm:p-7">
+                      <article key={title} className={group.areas.length === 1 ? "group flex min-h-[225px] w-full max-w-2xl flex-col rounded-3xl border border-[#172522]/10 bg-[#f7f5f0] p-6 transition duration-300 hover:-translate-y-1 hover:bg-[#172522] hover:text-white hover:shadow-xl hover:shadow-[#172522]/8 sm:p-7" : "group flex min-h-[225px] flex-col rounded-3xl border border-[#172522]/10 bg-[#f7f5f0] p-6 transition duration-300 hover:-translate-y-1 hover:bg-[#172522] hover:text-white hover:shadow-xl hover:shadow-[#172522]/8 sm:p-7"}>
                         <div className="flex items-center justify-between">
                           <span className="grid h-12 w-12 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e] transition group-hover:bg-[#b48a45] group-hover:text-white">
                             <Icon className="h-5 w-5" />
