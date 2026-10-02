@@ -132,7 +132,7 @@ function Index() {
 
         {menuOpen && (
           <nav className="grid border-t border-[#172522]/10 bg-[#f7f5f0] px-5 py-3 lg:hidden" aria-label="Mobile navigation">
-            {[["Practice Areas", "#practice"], ["About Tom", "#attorney"], ["Contact", "#consultation"], ["Client Resources", "#utilities"]].map(
+            {[["Practice Areas", "/practice-areas"], ["About Tom", "/about"], ["Contact", "/contact"], ["Client Resources", "/client-resources"]].map(
               ([label, href]) => (
                 <a
                   key={href}
