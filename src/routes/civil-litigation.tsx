@@ -26,7 +26,7 @@ function CivilLitigation() {
       { title: "Take the next step", text: "Move forward with a defined strategy, whether that means negotiation, formal action, or continued evaluation." },
     ]}
     ctaTitle="Have a dispute that needs attention?"
-    imageUrl="https://images.unsplash.com/photo-1767277680055-34f1eeec0c26?auto=format&fit=crop&fm=jpg&q=80&w=1800"
-    imageAlt="Traditional office with desk and bookshelves"
+    imageUrl="https://images.unsplash.com/photo-1568092806323-8ec13dfa9b92?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+    imageAlt="Interior of a trial courtroom"
   />;
 }
