@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Landmark } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
 export const Route = createFileRoute("/probate")({
@@ -12,7 +11,6 @@ export const Route = createFileRoute("/probate")({
 
 function Probate() {
   return <PracticeAreaPage
-    icon={Landmark}
     title="Steady guidance through probate."
     heroText="Probate can bring legal, financial, and family questions at the same time. Clear guidance can make the process easier to understand."
     introTitle="A clear path for families and fiduciaries."
