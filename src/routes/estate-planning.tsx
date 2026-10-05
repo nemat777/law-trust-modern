@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { FileText } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
 export const Route = createFileRoute("/estate-planning")({
@@ -12,7 +11,6 @@ export const Route = createFileRoute("/estate-planning")({
 
 function EstatePlanning() {
   return <PracticeAreaPage
-    icon={FileText}
     title="Estate planning built around your priorities."
     heroText="Thoughtful planning can make difficult future decisions clearer for you and the people who matter to you."
     introTitle="Plan ahead with clarity."
