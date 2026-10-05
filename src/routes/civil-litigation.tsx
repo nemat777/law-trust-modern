@@ -28,8 +28,5 @@ function CivilLitigation() {
     ctaTitle="Have a dispute that needs attention?"
     imageUrl="https://plus.unsplash.com/premium_photo-1661333952707-38323a7e73eb?auto=format&fit=crop&fm=jpg&q=80&w=1800"
     imageAlt="Strategy before escalation"
-    imageLabel="In practice"
-    imageTitle="Strategy before escalation"
-    imageText="Civil litigation is not simply about going to court. Understanding the facts, documents, leverage, and desired outcome comes first."
   />;
 }
