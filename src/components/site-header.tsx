@@ -116,6 +116,7 @@ export function PracticeAreaPage({
               <div className="max-w-3xl">
               <h2 className="mt-6 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">{introTitle}</h2>
               <p className="mt-5 text-base leading-8 text-[#63706b]">{introText}</p>
+              </div>
             </div>
 
             {reasons.length > 0 && (
@@ -215,11 +216,11 @@ export function PracticeAreaPage({
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Related practice areas</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {[
-                  ["Business", "/practice-areas/business"],
-                  ["Real Estate", "/practice-areas/real-estate"],
-                  ["Estate Planning", "/practice-areas/estate-planning"],
-                  ["Probate", "/practice-areas/probate"],
-                  ["Civil Litigation", "/practice-areas/civil-litigation"],
+                  ["Business", "/business"],
+                  ["Real Estate", "/real-estate"],
+                  ["Estate Planning", "/estate-planning"],
+                  ["Probate", "/probate"],
+                  ["Civil Litigation", "/civil-litigation"],
                 ].filter(([label]) => label !== title).map(([label, href]) => (
                   <Link key={href} to={href} className="rounded-full border border-[#172522]/10 bg-white px-4 py-2 text-xs font-semibold text-[#4d5955] hover:border-[#b48a45]/40 hover:text-[#8b642a]">{label}</Link>
                 ))}
