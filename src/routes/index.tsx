@@ -90,7 +90,7 @@ function Index() {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-[#b48a45]/30 bg-white/70 px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#80602b] shadow-sm">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#b48a45]" />
-                More than 21 years of experience
+                21+ years of Illinois legal experience
               </div>
 
               <h1 className="mt-7 max-w-3xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.035em] text-[#172522] sm:text-6xl lg:text-[4.8rem]">
@@ -174,6 +174,31 @@ function Index() {
           </div>
         </section>
 
+        <section className="bg-[#f7f5f0]">
+          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
+            <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Who we help</p>
+                <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Counsel for the decisions behind the day-to-day.</h2>
+              </div>
+              <p className="max-w-xl text-base leading-7 text-[#63706b] lg:justify-self-end">Legal questions often arrive in the middle of a larger decision. The firm works with people and organizations who need practical guidance on what the law means for that decision.</p>
+            </div>
+            <div className="mt-10 grid gap-4 md:grid-cols-3">
+              {[
+                ["Business owners", "Formation, contracts, transactions, and disputes that affect the way a business operates."],
+                ["Property owners & parties", "Purchases, sales, leases, closings, ownership questions, and property disputes."],
+                ["Individuals & families", "Estate planning, probate, and civil matters involving important personal decisions."],
+              ].map(([title, text]) => (
+                <div key={title} className="rounded-3xl border border-[#172522]/10 bg-white p-6 sm:p-7">
+                  <span className="font-display text-sm font-bold text-[#b48a45]">•</span>
+                  <h3 className="mt-4 font-display text-xl font-bold text-[#172522]">{title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-[#68736f]">{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="border-y border-[#172522]/10 bg-white">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:py-20">
             <div className="max-w-xl">
@@ -199,6 +224,30 @@ function Index() {
               <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
                 <p className="font-display text-lg font-bold text-[#172522]">Park Ridge office</p>
                 <p className="mt-2 text-sm leading-6 text-[#68736f]">A local office serving clients throughout Illinois.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white">
+          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Our approach</p>
+                <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Clarity before action.</h2>
+              </div>
+              <div className="grid gap-5 md:grid-cols-3">
+                {[
+                  ["01", "Listen carefully", "Start with the facts, documents, goals, and concerns that define the matter."],
+                  ["02", "Explain the choices", "Translate the legal issue into practical options, consequences, and priorities."],
+                  ["03", "Act deliberately", "Choose the appropriate next step and keep the work focused on the objective."],
+                ].map(([number, title, text]) => (
+                  <div key={number} className="border-t border-[#172522]/10 pt-5">
+                    <span className="font-display text-sm font-bold text-[#b48a45]">{number}</span>
+                    <h3 className="mt-3 font-display text-xl font-bold text-[#172522]">{title}</h3>
+                    <p className="mt-3 text-sm leading-6 text-[#68736f]">{text}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
