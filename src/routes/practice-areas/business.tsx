@@ -20,6 +20,7 @@ function Page() {
     introTitle="Keep the legal side of the business moving."
     introText="Business matters often move quickly. The goal is to understand the commercial objective, identify the legal issues that matter, and give you a straightforward path forward."
     matters={["Entity formation and governance","Business contracts and agreements","Acquisitions and transactions","General business counsel"]}
+    reasons={["You are forming a company, changing its ownership, or reviewing how the business is structured.","A contract, transaction, or business relationship needs legal review before you move forward.","A disagreement or business decision has legal consequences and you want to understand your options."]}
     ctaTitle="Have a business matter to discuss?"
   />;
 }
