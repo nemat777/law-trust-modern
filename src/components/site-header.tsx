@@ -161,7 +161,21 @@ export function PracticeAreaPage({
                 <a href="tel:8476929900" className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/85">(847) 692-9900</a>
               </div>
             </div>
-            <Link to="/practice-areas" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">← All practice areas</Link>
+            <div className="mt-10 border-t border-[#172522]/10 pt-8">
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Related practice areas</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {[
+                  ["Business", "/practice-areas/business"],
+                  ["Real Estate", "/practice-areas/real-estate"],
+                  ["Estate Planning", "/practice-areas/estate-planning"],
+                  ["Probate", "/practice-areas/probate"],
+                  ["Civil Litigation", "/practice-areas/civil-litigation"],
+                ].filter(([label]) => label !== title).map(([label, href]) => (
+                  <Link key={href} to={href} className="rounded-full border border-[#172522]/10 bg-white px-4 py-2 text-xs font-semibold text-[#4d5955] hover:border-[#b48a45]/40 hover:text-[#8b642a]">{label}</Link>
+                ))}
+              </div>
+            </div>
+                        <Link to="/practice-areas" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">← All practice areas</Link>
           </div>
         </section>
       </main>
