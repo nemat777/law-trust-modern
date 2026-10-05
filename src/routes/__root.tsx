@@ -15,20 +15,17 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
-        </p>
-        <div className="mt-6">
-          <Link
-            to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Go home
-          </Link>
+    <div className="min-h-screen bg-[#f7f5f0] text-[#18211f]">
+      <div className="mx-auto flex min-h-screen max-w-3xl items-center px-5 py-16 sm:px-8">
+        <div className="w-full rounded-[2rem] border border-[#172522]/10 bg-white p-8 shadow-sm sm:p-12">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Gregory Law Offices</p>
+          <p className="mt-6 font-display text-7xl font-bold tracking-[-0.04em] text-[#172522]">404</p>
+          <h1 className="mt-3 font-display text-3xl font-bold text-[#172522] sm:text-4xl">That page isn't here.</h1>
+          <p className="mt-4 max-w-xl text-base leading-7 text-[#63706b]">The page you're looking for may have moved. You can return to the firm homepage or explore the practice areas.</p>
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <Link to="/" className="inline-flex items-center justify-center rounded-full bg-[#b48a45] px-6 py-3 text-sm font-semibold text-white hover:bg-[#966f34]">Return home</Link>
+            <Link to="/practice-areas" className="inline-flex items-center justify-center rounded-full border border-[#172522]/15 px-6 py-3 text-sm font-semibold text-[#172522] hover:bg-[#f7f5f0]">View practice areas</Link>
+          </div>
         </div>
       </div>
     </div>
