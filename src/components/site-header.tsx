@@ -192,6 +192,7 @@ export function SiteFooter() {
               <p>1410 Higgins Road, Suite 204</p>
               <p>Park Ridge, IL 60068</p>
               <a className="mt-2 inline-block text-[#d7b56d] hover:text-white" href="tel:8476929900">(847) 692-9900</a>
+              <a className="mt-1 block text-white/55 hover:text-white" href="mailto:tom@gregorylawoffices.com">tom@gregorylawoffices.com</a>
             </div>
           </div>
           <div>
