@@ -142,7 +142,7 @@ export function PracticeAreaPage({
         <section className="bg-white">
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
             <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
-              <div className="lg:sticky lg:top-28">
+              <div className="">
                 <span className="grid h-14 w-14 place-items-center rounded-full border border-[#b48a45]/30 bg-[#efe7d6] text-[#9a6f2e]">
                   <Compass className="h-6 w-6" />
                 </span>
