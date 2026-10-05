@@ -1,11 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, Phone, X, type LucideIcon } from "lucide-react";
+import { ChevronDown, Compass, Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/gregory-logo.png";
 import { Button } from "@/components/ui/button";
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [practiceOpen, setPracticeOpen] = useState(false);
   const nav = [
     ["Practice Areas", "/practice-areas"],
     ["About Tom", "/about"],
@@ -32,7 +33,21 @@ export function SiteHeader() {
             </span>
           </Link>
           <nav className="hidden items-center gap-8 text-sm font-medium text-[#44504c] lg:flex" aria-label="Main navigation">
-            {nav.map(([label, href]) => <Link key={href} to={href} className="transition hover:text-[#9a6f2e]">{label}</Link>)}
+            <div className="group relative">
+              <button type="button" className="inline-flex items-center gap-1.5 py-3 transition hover:text-[#9a6f2e] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#b48a45]/60" aria-expanded={practiceOpen} onClick={() => setPracticeOpen(v => !v)}>
+                Practice Areas
+                <ChevronDown className={practiceOpen ? "h-3.5 w-3.5 rotate-180 transition-transform" : "h-3.5 w-3.5 transition-transform"} />
+              </button>
+              <div className={practiceOpen ? "absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3" : "pointer-events-none invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100"}>
+                <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-2 shadow-[0_18px_45px_rgba(23,37,34,0.12)]">
+                  <Link to="/practice-areas" onClick={() => setPracticeOpen(false)} className="block rounded-xl px-4 py-3 text-sm font-semibold text-[#172522] hover:bg-[#ece9e1]">All Practice Areas</Link>
+                  {[
+                    ["Business", "/business"], ["Real Estate", "/real-estate"], ["Estate Planning", "/estate-planning"], ["Probate", "/probate"], ["Civil Litigation", "/civil-litigation"],
+                  ].map(([label, href]) => <Link key={href} to={href} onClick={() => setPracticeOpen(false)} className="block rounded-xl px-4 py-2.5 text-sm text-[#4d5955] hover:bg-[#ece9e1] hover:text-[#172522]">{label}</Link>)}
+                </div>
+              </div>
+            </div>
+            {nav.slice(1).map(([label, href]) => <Link key={href} to={href} className="transition hover:text-[#9a6f2e]">{label}</Link>)}
           </nav>
           <div className="flex items-center gap-2">
             <Button asChild className="hidden rounded-full bg-[#b48a45] px-5 text-white shadow-sm hover:bg-[#966f34] sm:inline-flex">
@@ -45,7 +60,19 @@ export function SiteHeader() {
         </div>
         {menuOpen && (
           <nav className="grid border-t border-[#172522]/10 bg-[#f7f5f0] px-5 py-3 lg:hidden" aria-label="Mobile navigation">
-            {nav.map(([label, href]) => (
+            <button type="button" onClick={() => setPracticeOpen(v => !v)} className="flex items-center justify-between border-b border-[#172522]/10 py-4 text-left text-sm font-medium text-[#34413d]" aria-expanded={practiceOpen}>
+              Practice Areas
+              <ChevronDown className={practiceOpen ? "h-4 w-4 rotate-180 transition-transform" : "h-4 w-4 transition-transform"} />
+            </button>
+            {practiceOpen && (
+              <div className="border-b border-[#172522]/10 pb-2 pl-4">
+                <Link to="/practice-areas" onClick={() => setMenuOpen(false)} className="block py-3 text-sm font-semibold text-[#172522]">All Practice Areas</Link>
+                {[
+                  ["Business", "/business"], ["Real Estate", "/real-estate"], ["Estate Planning", "/estate-planning"], ["Probate", "/probate"], ["Civil Litigation", "/civil-litigation"],
+                ].map(([label, href]) => <Link key={href} to={href} onClick={() => setMenuOpen(false)} className="block py-2.5 text-sm text-[#4d5955]">{label}</Link>)}
+              </div>
+            )}
+            {nav.slice(1).map(([label, href]) => (
               <Link key={href} to={href} onClick={() => setMenuOpen(false)} className="border-b border-[#172522]/10 py-4 text-sm font-medium text-[#34413d] last:border-0">{label}</Link>
             ))}
             <Link to="/contact" onClick={() => setMenuOpen(false)} className="mt-2 inline-flex items-center justify-center rounded-full bg-[#b48a45] px-5 py-3 text-sm font-semibold text-white">Start a Conversation</Link>
@@ -83,7 +110,6 @@ export function PageHero({ eyebrow, title, text, imageUrl, imageAlt }: { eyebrow
 }
 
 export function PracticeAreaPage({
-  icon: Icon,
   title,
   heroText,
   introTitle,
@@ -96,7 +122,6 @@ export function PracticeAreaPage({
   imageUrl,
   imageAlt,
 }: {
-  icon: LucideIcon;
   title: string;
   heroText: string;
   introTitle: string;
@@ -119,7 +144,7 @@ export function PracticeAreaPage({
             <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
               <div className="lg:sticky lg:top-28">
                 <span className="grid h-14 w-14 place-items-center rounded-full border border-[#b48a45]/30 bg-[#efe7d6] text-[#9a6f2e]">
-                  <Icon className="h-6 w-6" />
+                  <Compass className="h-6 w-6" />
                 </span>
                 <p className="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">The approach</p>
                 <div className="mt-3 h-px w-16 bg-[#b48a45]" />
