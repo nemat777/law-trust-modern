@@ -60,7 +60,7 @@ export function SiteHeader() {
 export function PageHero({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
   return (
     <section className="relative overflow-hidden border-b border-[#172522]/10 bg-[#ece9e1]">
-      <div className="absolute right-0 top-0 h-full w-1/3 bg-[#e4dccb]/45" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,#e4dccb_0%,transparent_70%)] opacity-30" aria-hidden="true" />
       <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-24">
         <div className="max-w-4xl">
           <div className="flex items-center gap-4">
@@ -124,7 +124,7 @@ export function PracticeAreaPage({
             </div>
 
             {imageUrl && (
-              <div className="mt-2 overflow-hidden rounded-[1.75rem] border border-[#172522]/10 bg-[#ece9e1] shadow-[0_18px_50px_rgba(23,37,34,0.08)] lg:col-span-2">
+              <div className="mt-14 overflow-hidden rounded-[1.75rem] border border-[#172522]/10 bg-[#ece9e1] shadow-[0_18px_50px_rgba(23,37,34,0.08)]">
                 <img
                   src={imageUrl}
                   alt={imageAlt ?? ""}
