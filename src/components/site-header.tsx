@@ -48,6 +48,7 @@ export function SiteHeader() {
             {nav.map(([label, href]) => (
               <Link key={href} to={href} onClick={() => setMenuOpen(false)} className="border-b border-[#172522]/10 py-4 text-sm font-medium text-[#34413d] last:border-0">{label}</Link>
             ))}
+            <Link to="/contact" onClick={() => setMenuOpen(false)} className="mt-2 inline-flex items-center justify-center rounded-full bg-[#b48a45] px-5 py-3 text-sm font-semibold text-white">Start a Conversation</Link>
             <a href="tel:8476929900" className="flex items-center gap-2 py-4 text-sm font-semibold text-[#9a6f2e]"><Phone className="h-4 w-4" /> (847) 692-9900</a>
           </nav>
         )}
@@ -209,6 +210,7 @@ export function SiteFooter() {
               <p>Park Ridge, IL 60068</p>
               <a className="mt-2 inline-block text-[#d7b56d] hover:text-white" href="tel:8476929900">(847) 692-9900</a>
               <a className="mt-1 block text-white/55 hover:text-white" href="mailto:tom@gregorylawoffices.com">tom@gregorylawoffices.com</a>
+              <p className="mt-3 text-xs text-white/40">Monday–Friday · 8:30 am–5:00 pm</p>
             </div>
           </div>
           <div>
