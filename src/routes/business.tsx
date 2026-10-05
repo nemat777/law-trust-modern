@@ -26,5 +26,7 @@ function Business() {
       { title: "Choose a path forward", text: "Translate the legal analysis into clear options and a practical next step." },
     ]}
     ctaTitle="Have a business matter to discuss?"
+    imageUrl="https://images.unsplash.com/photo-1758876020343-c8c2add9d527?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+    imageAlt="Professional reviewing documents at a desk"
   />;
 }
