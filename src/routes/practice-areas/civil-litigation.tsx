@@ -20,6 +20,7 @@ function Page() {
     introTitle="Know your position before deciding your next move."
     introText="When a disagreement becomes a legal dispute, careful preparation and clear communication matter. Gregory Law Offices represents clients in a focused range of civil matters."
     matters={["Business and contract disputes","Real estate disputes","Property-related claims","Other civil litigation"]}
+    reasons={["A dispute has escalated beyond an ordinary disagreement and legal action is being considered.","You received a demand, claim, or lawsuit and need to understand your position.","You are considering whether to pursue or defend a civil claim and want to evaluate the available options."]}
     ctaTitle="Have a dispute that needs attention?"
   />;
 }
