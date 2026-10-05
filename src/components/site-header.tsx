@@ -77,6 +77,8 @@ export function PracticeAreaPage({
   introText,
   matters,
   reasons = [],
+  considerations = [],
+  process = [],
   ctaTitle,
 }: {
   icon: LucideIcon;
@@ -86,6 +88,8 @@ export function PracticeAreaPage({
   introText: string;
   matters: string[];
   reasons?: string[];
+  considerations?: string[];
+  process?: { title: string; text: string }[];
   ctaTitle: string;
 }) {
   return (
@@ -128,6 +132,23 @@ export function PracticeAreaPage({
               </>
             )}
 
+            {considerations.length > 0 && (
+              <div className="mt-12 border-t border-[#172522]/10 pt-10">
+                <div className="max-w-2xl">
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">A closer look</p>
+                  <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">The details depend on the situation.</h3>
+                  <p className="mt-3 text-sm leading-7 text-[#68736f]">Every matter has its own facts, documents, timing, and priorities. These are some of the issues that may deserve attention.</p>
+                </div>
+                <div className="mt-7 grid gap-4 md:grid-cols-2">
+                  {considerations.map((item) => (
+                    <div key={item} className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-6">
+                      <p className="text-sm leading-7 text-[#35423d]">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="mt-12 border-t border-[#172522]/10 pt-10">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                 <div>
@@ -150,6 +171,26 @@ export function PracticeAreaPage({
             </div>
           </div>
         </section>
+
+        {process.length > 0 && (
+          <section className="border-y border-[#172522]/10 bg-white">
+            <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:py-16">
+              <div className="max-w-2xl">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Working together</p>
+                <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522]">A practical process from the first conversation forward.</h2>
+              </div>
+              <div className="mt-9 grid gap-4 md:grid-cols-3">
+                {process.map((step, index) => (
+                  <div key={step.title} className="rounded-2xl bg-[#f7f5f0] p-6">
+                    <span className="text-sm font-bold text-[#9a6f2e]">0{index + 1}</span>
+                    <h3 className="mt-3 font-display text-xl font-bold text-[#172522]">{step.title}</h3>
+                    <p className="mt-3 text-sm leading-7 text-[#5d6964]">{step.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="bg-[#f7f5f0]">
           <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:py-14">
