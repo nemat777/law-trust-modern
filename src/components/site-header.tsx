@@ -130,17 +130,6 @@ export function PracticeAreaPage({
               </div>
             </div>
 
-            {imageUrl && (
-              <div className="mt-14 overflow-hidden rounded-[1.75rem] border border-[#172522]/10 bg-[#ece9e1] shadow-[0_18px_50px_rgba(23,37,34,0.08)]">
-                <img
-                  src={imageUrl}
-                  alt={imageAlt ?? ""}
-                  className="aspect-[16/7] w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            )}
-
             {reasons.length > 0 && (
               <div className="mt-20 border-t border-[#172522]/10 pt-14 lg:col-span-2">
                 <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
