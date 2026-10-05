@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { BriefcaseBusiness } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
 export const Route = createFileRoute("/business")({
@@ -12,7 +11,6 @@ export const Route = createFileRoute("/business")({
 
 function Business() {
   return <PracticeAreaPage
-    icon={BriefcaseBusiness}
     title="Business law with a practical perspective."
     heroText="Counsel for Illinois businesses that need clear advice around formation, contracts, transactions, and the decisions that shape a company."
     introTitle="Keep the legal side of the business moving."
