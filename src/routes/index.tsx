@@ -45,30 +45,35 @@ const practices = [
     title: "Business",
     kicker: "Transactions & formation",
     text: "Entity formation, contracts, acquisitions, and the legal decisions that keep a business moving.",
+    href: "/business",
   },
   {
     icon: Building2,
     title: "Real Estate",
     kicker: "Property & transactions",
     text: "Purchases, sales, leases, closings, and property disputes handled with practical attention to detail.",
+    href: "/real-estate",
   },
   {
     icon: FileText,
     title: "Estate Planning",
     kicker: "Planning for what matters",
     text: "Wills, trusts, powers of attorney, and thoughtful plans built around your family and priorities.",
+    href: "/estate-planning",
   },
   {
     icon: Landmark,
     title: "Probate",
     kicker: "Guidance for families",
     text: "Steady guidance for executors, administrators, beneficiaries, and families through probate.",
+    href: "/probate",
   },
   {
     icon: Scale,
     title: "Civil Litigation",
     kicker: "Disputes & advocacy",
     text: "Focused representation in business, contract, real estate, and other civil disputes.",
+    href: "/civil-litigation",
   },
 ];
 
@@ -164,7 +169,7 @@ function Index() {
                     <p className="mt-7 text-[10px] font-bold uppercase tracking-[0.14em] text-[#8a918e] group-hover:text-[#d7b56d]">{practice.kicker}</p>
                     <h3 className="mt-2 font-display text-xl font-bold text-[#172522] group-hover:text-white">{practice.title}</h3>
                     <p className="mt-3 text-sm leading-6 text-[#65716d] group-hover:text-white/70">{practice.text}</p>
-                    <a href={practice.title === "Business" ? "/practice-areas/business" : practice.title === "Real Estate" ? "/practice-areas/real-estate" : practice.title === "Estate Planning" ? "/practice-areas/estate-planning" : practice.title === "Probate" ? "/practice-areas/probate" : "/practice-areas/civil-litigation"} className="mt-auto pt-6 inline-flex items-center gap-2 text-xs font-bold text-[#9a6f2e] group-hover:text-[#d7b56d]">
+                    <a href={practice.href} className="mt-auto pt-6 inline-flex items-center gap-2 text-xs font-bold text-[#9a6f2e] group-hover:text-[#d7b56d]">
                       Learn more <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </a>
                   </article>
