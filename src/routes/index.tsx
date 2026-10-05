@@ -205,6 +205,34 @@ function Index() {
         </section>
 
         <section className="border-y border-[#172522]/10 bg-white">
+          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-20">
+            <div className="relative overflow-hidden rounded-[1.75rem] bg-[#172522] p-2 shadow-[0_18px_50px_rgba(23,37,34,0.10)]">
+              <img
+                src="https://images.unsplash.com/photo-1777896193454-8b4863264f0b?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+                alt="Warm, light-filled office with bookshelves and desks"
+                className="aspect-[4/3] w-full rounded-[1.35rem] object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="max-w-xl lg:pl-6">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">A local practice, by design</p>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Personal attention starts with knowing who you are calling.</h2>
+              <p className="mt-5 text-base leading-7 text-[#63706b]">
+                Gregory Law Offices is intentionally structured around a direct attorney-client relationship. You know who is handling your matter, where the office is, and how to reach us when a question needs an answer.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-2 text-xs font-semibold text-[#5d6964]">
+                <span className="rounded-full border border-[#172522]/10 bg-[#f7f5f0] px-4 py-2">Park Ridge office</span>
+                <span className="rounded-full border border-[#172522]/10 bg-[#f7f5f0] px-4 py-2">Direct communication</span>
+                <span className="rounded-full border border-[#172522]/10 bg-[#f7f5f0] px-4 py-2">Illinois counsel</span>
+              </div>
+              <a href="/about" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a] hover:text-[#b48a45]">
+                Meet Tom <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-[#172522]/10 bg-white">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:py-20">
             <div className="max-w-xl">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Why Gregory Law Offices</p>
