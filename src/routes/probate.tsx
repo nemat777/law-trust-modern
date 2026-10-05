@@ -28,8 +28,5 @@ function Probate() {
     ctaTitle="Need help navigating an estate?"
     imageUrl="https://images.unsplash.com/photo-1528752477378-485b46bedcde?auto=format&fit=crop&fm=jpg&q=80&w=1800"
     imageAlt="The documents that guide an estate"
-    imageLabel="In practice"
-    imageTitle="The documents that guide an estate"
-    imageText="Probate begins with understanding the estate, the governing documents, and the responsibilities of the people administering it."
   />;
 }
