@@ -26,7 +26,10 @@ function RealEstate() {
       { title: "Move toward closing or resolution", text: "Use the legal analysis to address open issues and determine the most practical next step." },
     ]}
     ctaTitle="Have a property matter to discuss?"
-    imageUrl="https://images.unsplash.com/photo-1769776400238-cd24612240ea?auto=format&fit=crop&fm=jpg&q=80&w=1800"
-    imageAlt="House model and magnifying glass representing property review"
+    imageUrl="https://plus.unsplash.com/premium_photo-1661306787904-1c723371dc93?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+    imageAlt="A property transaction in practical terms"
+    imageLabel="In practice"
+    imageTitle="A property transaction in practical terms"
+    imageText="The important details often live in the purchase documents, title work, contingencies, and obligations surrounding the property."
   />;
 }
