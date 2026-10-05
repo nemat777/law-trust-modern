@@ -95,9 +95,6 @@ export function PracticeAreaPage({
   ctaTitle,
   imageUrl,
   imageAlt,
-  imageLabel,
-  imageTitle,
-  imageText,
 }: {
   icon: LucideIcon;
   title: string;
@@ -111,9 +108,6 @@ export function PracticeAreaPage({
   ctaTitle: string;
   imageUrl?: string;
   imageAlt?: string;
-  imageLabel?: string;
-  imageTitle?: string;
-  imageText?: string;
 }) {
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
