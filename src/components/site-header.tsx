@@ -86,6 +86,8 @@ export function PracticeAreaPage({
   considerations = [],
   process = [],
   ctaTitle,
+  imageUrl,
+  imageAlt,
 }: {
   icon: LucideIcon;
   title: string;
@@ -97,6 +99,8 @@ export function PracticeAreaPage({
   considerations?: string[];
   process?: { title: string; text: string }[];
   ctaTitle: string;
+  imageUrl?: string;
+  imageAlt?: string;
 }) {
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
@@ -118,6 +122,17 @@ export function PracticeAreaPage({
               <p className="mt-5 text-base leading-8 text-[#63706b]">{introText}</p>
               </div>
             </div>
+
+            {imageUrl && (
+              <div className="mt-2 overflow-hidden rounded-[1.75rem] border border-[#172522]/10 bg-[#ece9e1] shadow-[0_18px_50px_rgba(23,37,34,0.08)] lg:col-span-2">
+                <img
+                  src={imageUrl}
+                  alt={imageAlt ?? ""}
+                  className="aspect-[16/7] w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            )}
 
             {reasons.length > 0 && (
               <div className="mt-20 border-t border-[#172522]/10 pt-14 lg:col-span-2">
