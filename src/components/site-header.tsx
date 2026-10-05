@@ -141,17 +141,19 @@ export function PracticeAreaPage({
       <main>
         <section className="bg-white">
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
-            <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
-              <div className="">
-                <span className="grid h-14 w-14 place-items-center rounded-full border border-[#b48a45]/30 bg-[#efe7d6] text-[#9a6f2e]">
-                  <Compass className="h-6 w-6" />
+            <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16 lg:items-start">
+              <div className="flex items-center gap-4 lg:pt-1 lg:block">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-[#b48a45]/30 bg-[#efe7d6] text-[#9a6f2e]">
+                  <Compass className="h-5 w-5" />
                 </span>
-                <p className="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">The approach</p>
-                <div className="mt-3 h-px w-16 bg-[#b48a45]" />
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e] lg:mt-4">Our approach</p>
+                  <div className="mt-2 h-px w-12 bg-[#b48a45]" />
+                </div>
               </div>
               <div className="max-w-3xl">
-              <h2 className="mt-6 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">{introTitle}</h2>
-              <p className="mt-5 text-base leading-8 text-[#63706b]">{introText}</p>
+                <h2 className="font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">{introTitle}</h2>
+                <p className="mt-5 text-base leading-8 text-[#63706b]">{introText}</p>
               </div>
             </div>
 
