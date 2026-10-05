@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Building2 } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
 export const Route = createFileRoute("/real-estate")({
@@ -12,7 +11,6 @@ export const Route = createFileRoute("/real-estate")({
 
 function RealEstate() {
   return <PracticeAreaPage
-    icon={Building2}
     title="Real estate counsel that keeps the details in focus."
     heroText="Practical legal guidance for property transactions, ownership questions, leases, closings, and disputes."
     introTitle="Property decisions deserve careful review."
