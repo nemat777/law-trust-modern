@@ -1,9 +1,8 @@
 name: Deploy Vite site to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  # Cloudflare Pages is the production deployment target. Keep GitHub Pages
+  # available for an intentional manual deployment without running it on every push.
   workflow_dispatch:
 
 permissions:
