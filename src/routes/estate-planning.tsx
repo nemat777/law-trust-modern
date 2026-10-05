@@ -26,7 +26,10 @@ function EstatePlanning() {
       { title: "Leave with clarity", text: "Make sure you understand what the documents do and when they are intended to operate." },
     ]}
     ctaTitle="Ready to talk about an estate plan?"
-    imageUrl="https://images.unsplash.com/photo-1758691031749-607d43c14f63?auto=format&fit=crop&fm=jpg&q=80&w=1800"
-    imageAlt="Older couple reviewing financial and planning documents together"
+    imageUrl="https://images.unsplash.com/photo-1758691031730-640885ad19e5?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+    imageAlt="Planning for the people and decisions ahead"
+    imageLabel="In practice"
+    imageTitle="Planning for the people and decisions ahead"
+    imageText="Good estate planning connects documents to real people, family circumstances, and the decisions you want made when you cannot make them yourself."
   />;
 }
