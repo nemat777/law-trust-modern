@@ -59,11 +59,17 @@ export function SiteHeader() {
 
 export function PageHero({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
   return (
-    <section className="border-b border-[#172522]/10 bg-[#ece9e1]">
-      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">{eyebrow}</p>
-        <h1 className="mt-3 max-w-4xl font-display text-4xl font-bold tracking-[-0.035em] text-[#172522] sm:text-6xl">{title}</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5d6964]">{text}</p>
+    <section className="relative overflow-hidden border-b border-[#172522]/10 bg-[#ece9e1]">
+      <div className="absolute right-0 top-0 h-full w-1/3 bg-[#e4dccb]/45" aria-hidden="true" />
+      <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-24">
+        <div className="max-w-4xl">
+          <div className="flex items-center gap-4">
+            <span className="h-px w-10 bg-[#b48a45]" />
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#9a6f2e]">{eyebrow}</p>
+          </div>
+          <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.04] tracking-[-0.045em] text-[#172522] sm:text-6xl lg:text-[4.25rem]">{title}</h1>
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-[#5d6964] sm:text-xl">{text}</p>
+        </div>
       </div>
     </section>
   );
@@ -98,17 +104,22 @@ export function PracticeAreaPage({
       <PageHero eyebrow="Practice area" title={title} text={heroText} />
       <main>
         <section className="bg-white">
-          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
-            <div className="max-w-3xl">
-              <span className="grid h-12 w-12 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e]">
-                <Icon className="h-6 w-6" />
-              </span>
+          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
+            <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+              <div className="lg:sticky lg:top-28">
+                <span className="grid h-14 w-14 place-items-center rounded-full border border-[#b48a45]/30 bg-[#efe7d6] text-[#9a6f2e]">
+                  <Icon className="h-6 w-6" />
+                </span>
+                <p className="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">The approach</p>
+                <div className="mt-3 h-px w-16 bg-[#b48a45]" />
+              </div>
+              <div className="max-w-3xl">
               <h2 className="mt-6 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">{introTitle}</h2>
               <p className="mt-5 text-base leading-8 text-[#63706b]">{introText}</p>
             </div>
 
             {reasons.length > 0 && (
-              <div className="mt-16 border-t border-[#172522]/10 pt-12">
+              <div className="mt-20 border-t border-[#172522]/10 pt-14 lg:col-span-2">
                 <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
                   <div>
                     <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">When clients typically call</p>
@@ -127,7 +138,7 @@ export function PracticeAreaPage({
             )}
 
             {considerations.length > 0 && (
-              <div className="mt-16 border-t border-[#172522]/10 pt-12">
+              <div className="mt-20 border-t border-[#172522]/10 pt-14 lg:col-span-2">
                 <div className="max-w-2xl">
                   <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">A closer look</p>
                   <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">The details depend on the situation.</h3>
@@ -144,7 +155,7 @@ export function PracticeAreaPage({
               </div>
             )}
 
-            <div className="mt-12 border-t border-[#172522]/10 pt-10">
+            <div className="mt-20 border-t border-[#172522]/10 pt-14 lg:col-span-2">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">How we can help</p>
@@ -169,14 +180,14 @@ export function PracticeAreaPage({
 
         {process.length > 0 && (
           <section className="border-y border-[#172522]/10 bg-white">
-            <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:py-16">
+            <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
               <div className="max-w-2xl">
                 <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Working together</p>
                 <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522]">A practical process from the first conversation forward.</h2>
               </div>
-              <div className="mt-9 grid gap-4 md:grid-cols-3">
+              <div className="relative mt-10 grid gap-4 md:grid-cols-3">
                 {process.map((step, index) => (
-                  <div key={step.title} className="rounded-2xl bg-[#f7f5f0] p-6">
+                  <div key={step.title} className="relative rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-7 shadow-[0_10px_35px_rgba(23,37,34,0.04)]">
                     <span className="text-sm font-bold text-[#9a6f2e]">0{index + 1}</span>
                     <h3 className="mt-3 font-display text-xl font-bold text-[#172522]">{step.title}</h3>
                     <p className="mt-3 text-sm leading-7 text-[#5d6964]">{step.text}</p>
@@ -189,7 +200,7 @@ export function PracticeAreaPage({
 
         <section className="bg-[#f7f5f0]">
           <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:py-14">
-            <div className="flex flex-col gap-5 rounded-[1.5rem] bg-[#172522] p-7 text-white sm:p-9 md:flex-row md:items-center md:justify-between">
+            <div className="relative overflow-hidden rounded-[1.75rem] bg-[#172522] p-8 text-white shadow-[0_18px_50px_rgba(23,37,34,0.16)] sm:p-10 md:flex-row md:items-center md:justify-between">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#d7b56d]">Next step</p>
                 <h2 className="mt-2 font-display text-2xl font-bold sm:text-3xl">{ctaTitle}</h2>
@@ -200,7 +211,7 @@ export function PracticeAreaPage({
                 <a href="tel:8476929900" className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/85">(847) 692-9900</a>
               </div>
             </div>
-            <div className="mt-10 border-t border-[#172522]/10 pt-8">
+            <div className="mt-12 border-t border-[#172522]/10 pt-9">
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Related practice areas</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {[
