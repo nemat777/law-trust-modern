@@ -27,6 +27,9 @@ function Business() {
     ]}
     ctaTitle="Have a business matter to discuss?"
     imageUrl="https://images.unsplash.com/photo-1758518731462-d091b0b4ed0d?auto=format&fit=crop&fm=jpg&q=80&w=1800"
-    imageAlt="Business owners reviewing and signing a contract with legal counsel"
+    imageAlt="Business owners and counsel working through an agreement"
+    imageLabel="In practice"
+    imageTitle="Business owners and counsel working through an agreement"
+    imageText="Contracts are not just paperwork. They define expectations, allocate risk, and shape how a business relationship works."
   />;
 }
