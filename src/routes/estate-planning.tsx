@@ -26,7 +26,7 @@ function EstatePlanning() {
       { title: "Leave with clarity", text: "Make sure you understand what the documents do and when they are intended to operate." },
     ]}
     ctaTitle="Ready to talk about an estate plan?"
-    imageUrl="https://images.unsplash.com/photo-1743385779313-ac03bb0f997b?auto=format&fit=crop&fm=jpg&q=80&w=1800"
-    imageAlt="Documents and a pen arranged on a wooden desk"
+    imageUrl="https://images.unsplash.com/photo-1758691031749-607d43c14f63?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+    imageAlt="Older couple reviewing financial and planning documents together"
   />;
 }
