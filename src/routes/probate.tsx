@@ -26,7 +26,7 @@ function Probate() {
       { title: "Resolve outstanding issues", text: "Address beneficiary questions, disputes, and remaining matters so the administration can proceed." },
     ]}
     ctaTitle="Need help navigating an estate?"
-    imageUrl="https://images.unsplash.com/photo-1769776400238-cd24612240ea?auto=format&fit=crop&fm=jpg&q=80&w=1800"
-    imageAlt="Documents and property records representing estate administration"
+    imageUrl="https://images.unsplash.com/photo-1758691031749-607d43c14f63?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+    imageAlt="Older couple reviewing financial and estate documents together"
   />;
 }
