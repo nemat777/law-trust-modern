@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type FormEvent, type ReactNode } from "react";
+import { useState, type FormEvent } from "react";
 import {
   ArrowRight,
   BriefcaseBusiness,
@@ -72,7 +72,6 @@ const practices = [
 ];
 
 function Index() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -164,7 +163,7 @@ function Index() {
                     <p className="mt-7 text-[10px] font-bold uppercase tracking-[0.14em] text-[#8a918e] group-hover:text-[#d7b56d]">{practice.kicker}</p>
                     <h3 className="mt-2 font-display text-xl font-bold text-[#172522] group-hover:text-white">{practice.title}</h3>
                     <p className="mt-3 text-sm leading-6 text-[#65716d] group-hover:text-white/70">{practice.text}</p>
-                    <a href={practice.title === "Business" ? "/business" : practice.title === "Real Estate" ? "/real-estate" : practice.title === "Estate Planning" ? "/estate-planning" : practice.title === "Probate" ? "/probate" : "/civil-litigation"} className="mt-auto pt-6 inline-flex items-center gap-2 text-xs font-bold text-[#9a6f2e] group-hover:text-[#d7b56d]">
+                    <a href={practice.title === "Business" ? "/practice-areas/business" : practice.title === "Real Estate" ? "/practice-areas/real-estate" : practice.title === "Estate Planning" ? "/practice-areas/estate-planning" : practice.title === "Probate" ? "/practice-areas/probate" : "/practice-areas/civil-litigation"} className="mt-auto pt-6 inline-flex items-center gap-2 text-xs font-bold text-[#9a6f2e] group-hover:text-[#d7b56d]">
                       Learn more <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </a>
                   </article>
@@ -234,8 +233,8 @@ function Index() {
                 <AttorneyStat value="JMLS" label="Legal education" />
               </div>
 
-              <a href="#consultation" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a] hover:text-[#b48a45]">
-                Talk about your matter <ArrowRight className="h-4 w-4" />
+              <a href="/about" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a] hover:text-[#b48a45]">
+                Meet Tom <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -251,7 +250,7 @@ function Index() {
               </p>
 
               <div className="mt-9 space-y-4">
-                <a href="tel:8476929900" className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10">
+                <a href="/contact" className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10">
                   <span className="grid h-11 w-11 place-items-center rounded-full bg-[#b48a45] text-white"><Phone className="h-5 w-5" /></span>
                   <span><span className="block text-xs text-white/45">Call the office</span><span className="mt-0.5 block font-display text-xl font-bold">(847) 692-9900</span></span>
                 </a>
