@@ -80,6 +80,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "author", content: "Gregory Law Offices, Ltd." },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Gregory Law Offices, Ltd." },
+      { name: "theme-color", content: "#172522" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     scripts: [{
@@ -104,6 +106,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "canonical", href: "https://law-trust-modern.kiannematollahi.workers.dev" },
     ],
   }),
   shellComponent: RootShell,
