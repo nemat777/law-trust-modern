@@ -20,6 +20,7 @@ function Page() {
     introTitle="Property decisions deserve careful review."
     introText="From a purchase or sale to a lease or dispute, Gregory Law Offices helps clients understand the legal details behind significant real estate decisions."
     matters={["Purchases and sales","Commercial and residential leases","Closings and transaction documents","Property disputes"]}
+    reasons={["You are buying, selling, leasing, or otherwise changing an interest in property.","A closing, title issue, lease term, or transaction document raises a question you want reviewed.","A property disagreement is becoming difficult to resolve on your own."]}
     ctaTitle="Have a property matter to discuss?"
   />;
 }
