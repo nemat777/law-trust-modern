@@ -151,7 +151,7 @@ export function PracticeAreaPage({
                   <div className="mt-2 h-px w-12 bg-[#b48a45]" />
                 </div>
               </div>
-              <div className="max-w-3xl">
+              <div className="max-w-3xl lg:-mt-4">
                 <h2 className="font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">{introTitle}</h2>
                 <p className="mt-5 text-base leading-8 text-[#63706b]">{introText}</p>
               </div>
