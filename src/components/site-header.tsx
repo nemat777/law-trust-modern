@@ -108,41 +108,36 @@ export function PracticeAreaPage({
             </div>
 
             {reasons.length > 0 && (
-              <>
-                <div className="mt-12 border-t border-[#172522]/10 pt-10">
-                  <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-6 sm:p-7">
-                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">What this can look like</p>
-                    <p className="mt-3 max-w-3xl text-base leading-7 text-[#46534e]">Legal questions rarely arrive in neat categories. If you are unsure whether a situation fits this practice area, the office can help you identify the issue and the appropriate next step.</p>
+              <div className="mt-16 border-t border-[#172522]/10 pt-12">
+                <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">When clients typically call</p>
+                    <h3 className="mt-2 font-display text-2xl font-bold leading-tight text-[#172522] sm:text-3xl">Know when it is worth bringing us in.</h3>
+                  </div>
+                  <div className="grid gap-3 sm:grid-cols-3">
+                    {reasons.map((reason, index) => (
+                      <div key={reason} className="rounded-2xl border border-[#172522]/10 bg-[#ece9e1] p-5">
+                        <span className="text-xs font-bold text-[#9a6f2e]">0{index + 1}</span>
+                        <p className="mt-3 text-sm leading-6 text-[#35423d]">{reason}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
-
-                <div className="mt-12 border-t border-[#172522]/10 pt-10">
-                <div className="max-w-2xl">
-                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">When clients typically call</p>
-                  <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">Know when it is worth bringing us in.</h3>
-                </div>
-                <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {reasons.map((reason) => (
-                    <div key={reason} className="rounded-2xl bg-[#ece9e1] p-5">
-                      <p className="text-sm leading-6 text-[#35423d]">{reason}</p>
-                    </div>
-                  ))}
-                </div>
-                </div>
-              </>
+              </div>
             )}
 
             {considerations.length > 0 && (
-              <div className="mt-12 border-t border-[#172522]/10 pt-10">
+              <div className="mt-16 border-t border-[#172522]/10 pt-12">
                 <div className="max-w-2xl">
                   <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">A closer look</p>
                   <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">The details depend on the situation.</h3>
                   <p className="mt-3 text-sm leading-7 text-[#68736f]">Every matter has its own facts, documents, timing, and priorities. These are some of the issues that may deserve attention.</p>
                 </div>
                 <div className="mt-7 grid gap-4 md:grid-cols-2">
-                  {considerations.map((item) => (
-                    <div key={item} className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-6">
-                      <p className="text-sm leading-7 text-[#35423d]">{item}</p>
+                  {considerations.map((item, index) => (
+                    <div key={item} className="group rounded-2xl border border-[#172522]/10 bg-white p-6 shadow-[0_8px_30px_rgba(23,37,34,0.04)]">
+                      <span className="text-xs font-bold text-[#9a6f2e]">0{index + 1}</span>
+                      <p className="mt-3 text-sm leading-7 text-[#35423d]">{item}</p>
                     </div>
                   ))}
                 </div>
