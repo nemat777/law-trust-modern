@@ -26,7 +26,10 @@ function CivilLitigation() {
       { title: "Take the next step", text: "Move forward with a defined strategy, whether that means negotiation, formal action, or continued evaluation." },
     ]}
     ctaTitle="Have a dispute that needs attention?"
-    imageUrl="https://images.unsplash.com/photo-1568092806323-8ec13dfa9b92?auto=format&fit=crop&fm=jpg&q=80&w=1800"
-    imageAlt="Interior of a trial courtroom"
+    imageUrl="https://plus.unsplash.com/premium_photo-1661333952707-38323a7e73eb?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+    imageAlt="Strategy before escalation"
+    imageLabel="In practice"
+    imageTitle="Strategy before escalation"
+    imageText="Civil litigation is not simply about going to court. Understanding the facts, documents, leverage, and desired outcome comes first."
   />;
 }
