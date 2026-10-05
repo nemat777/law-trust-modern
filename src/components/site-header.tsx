@@ -57,19 +57,26 @@ export function SiteHeader() {
   );
 }
 
-export function PageHero({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
+export function PageHero({ eyebrow, title, text, imageUrl, imageAlt }: { eyebrow: string; title: string; text: string; imageUrl?: string; imageAlt?: string }) {
   return (
-    <section className="relative overflow-hidden border-b border-[#172522]/10 bg-[#ece9e1]">
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,#e4dccb_0%,transparent_70%)] opacity-30" aria-hidden="true" />
-      <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-24">
-        <div className="max-w-4xl">
+    <section className="border-b border-[#172522]/10 bg-[#ece9e1]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:py-20">
+        <div className="max-w-3xl">
           <div className="flex items-center gap-4">
             <span className="h-px w-10 bg-[#b48a45]" />
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#9a6f2e]">{eyebrow}</p>
           </div>
-          <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.04] tracking-[-0.045em] text-[#172522] sm:text-6xl lg:text-[4.25rem]">{title}</h1>
+          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.04] tracking-[-0.045em] text-[#172522] sm:text-6xl lg:text-[4.15rem]">{title}</h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#5d6964] sm:text-xl">{text}</p>
         </div>
+        {imageUrl && (
+          <div className="relative lg:justify-self-end lg:w-full">
+            <div className="overflow-hidden rounded-[1.75rem] border border-[#172522]/10 bg-[#e4dccb] shadow-[0_18px_50px_rgba(23,37,34,0.10)]">
+              <img src={imageUrl} alt={imageAlt ?? ""} className="aspect-[4/3] w-full object-cover" />
+            </div>
+            <span className="absolute -bottom-3 left-6 rounded-full border border-[#172522]/10 bg-[#f7f5f0] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-[#8b642a] shadow-sm">Gregory Law Offices</span>
+          </div>
+        )}
       </div>
     </section>
   );
@@ -111,7 +118,7 @@ export function PracticeAreaPage({
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
       <SiteHeader />
-      <PageHero eyebrow="Practice area" title={title} text={heroText} />
+      <PageHero eyebrow="Practice area" title={title} text={heroText} imageUrl={imageUrl} imageAlt={imageAlt} />
       <main>
         <section className="bg-white">
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
