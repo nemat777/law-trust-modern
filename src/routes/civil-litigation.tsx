@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Scale } from "lucide-react";
 import { PracticeAreaPage } from "@/components/site-header";
 
 export const Route = createFileRoute("/civil-litigation")({
@@ -12,7 +11,6 @@ export const Route = createFileRoute("/civil-litigation")({
 
 function CivilLitigation() {
   return <PracticeAreaPage
-    icon={Scale}
     title="Focused advocacy when a dispute needs to be resolved."
     heroText="Civil disputes can be expensive in time, attention, and uncertainty. The firm approaches litigation with a focus on the issues that matter."
     introTitle="Know your position before deciding your next move."
