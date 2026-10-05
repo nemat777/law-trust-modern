@@ -26,7 +26,7 @@ function RealEstate() {
       { title: "Move toward closing or resolution", text: "Use the legal analysis to address open issues and determine the most practical next step." },
     ]}
     ctaTitle="Have a property matter to discuss?"
-    imageUrl="https://images.unsplash.com/photo-1758448756207-54505680d130?auto=format&fit=crop&fm=jpg&q=80&w=1800"
-    imageAlt="Elegant modern property surrounded by landscaping"
+    imageUrl="https://images.unsplash.com/photo-1769776400238-cd24612240ea?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+    imageAlt="House model and magnifying glass representing property review"
   />;
 }
