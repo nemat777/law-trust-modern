@@ -103,14 +103,15 @@ export function PracticeAreaPage({
             </div>
 
             {reasons.length > 0 && (
-              <div className="mt-12 border-t border-[#172522]/10 pt-10">
-                <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-6 sm:p-7">
-                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">What this can look like</p>
-                  <p className="mt-3 max-w-3xl text-base leading-7 text-[#46534e]">Legal questions rarely arrive in neat categories. If you are unsure whether a situation fits this practice area, the office can help you identify the issue and the appropriate next step.</p>
+              <>
+                <div className="mt-12 border-t border-[#172522]/10 pt-10">
+                  <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-6 sm:p-7">
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">What this can look like</p>
+                    <p className="mt-3 max-w-3xl text-base leading-7 text-[#46534e]">Legal questions rarely arrive in neat categories. If you are unsure whether a situation fits this practice area, the office can help you identify the issue and the appropriate next step.</p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="mt-12 border-t border-[#172522]/10 pt-10">
+                <div className="mt-12 border-t border-[#172522]/10 pt-10">
                 <div className="max-w-2xl">
                   <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">When clients typically call</p>
                   <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">Know when it is worth bringing us in.</h3>
@@ -122,7 +123,8 @@ export function PracticeAreaPage({
                     </div>
                   ))}
                 </div>
-              </div>
+                </div>
+              </>
             )}
 
             <div className="mt-12 border-t border-[#172522]/10 pt-10">
