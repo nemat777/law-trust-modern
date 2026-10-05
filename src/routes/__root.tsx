@@ -106,7 +106,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
-      { rel: "canonical", href: "https://law-trust-modern.kiannematollahi.workers.dev" },
     ],
   }),
   shellComponent: RootShell,
