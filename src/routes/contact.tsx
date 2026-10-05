@@ -57,6 +57,11 @@ function Contact() {
                   <p className="mt-1 font-semibold leading-6 text-[#172522]">1410 Higgins Road, Suite 204<br />Park Ridge, IL 60068</p>
                 </a>
               </div>
+              <div className="mt-5 rounded-2xl border border-[#172522]/10 bg-white p-5">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#9a6f2e]">Office hours</p>
+                <p className="mt-2 text-sm font-semibold text-[#172522]">Monday–Friday, 8:30 am–5:00 pm</p>
+                <p className="mt-2 text-sm leading-6 text-[#68736f]">Call during office hours or send a message at any time. The office can follow up regarding your matter.</p>
+              </div>
             </div>
 
             <form
