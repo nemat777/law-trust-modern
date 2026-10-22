@@ -25,14 +25,14 @@ export function SiteHeader() {
       </div>
       <header className="sticky top-0 z-40 border-b border-[#172522]/10 bg-[#f7f5f0]/95 backdrop-blur-xl">
         <div className="mx-auto flex h-[82px] max-w-7xl items-center justify-between gap-6 px-5 sm:px-8">
-          <Link to="/" className="flex items-center gap-3" aria-label="Gregory Law Offices home">
+          <Link to="/" className="flex items-center gap-3" aria-label="Gregory Law Offices Home">
             <img src={logo} alt="Gregory Law Offices logo" className="h-12 w-12 object-contain" width={102} height={106} />
             <span className="leading-tight">
               <span className="block font-display text-lg font-bold tracking-[-0.02em] text-[#172522]">Gregory Law Offices, Ltd.</span>
               <span className="block text-[10px] font-semibold uppercase tracking-[0.16em] text-[#9a6f2e]">Park Ridge · Illinois</span>
             </span>
           </Link>
-          <nav className="hidden items-center gap-8 text-sm font-medium text-[#44504c] lg:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-8 text-sm font-medium text-[#44504c] lg:flex" aria-label="Main Navigation">
             <div className="group relative">
               <button type="button" className="inline-flex items-center gap-1.5 py-3 transition hover:text-[#9a6f2e] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#b48a45]/60" aria-expanded={practiceOpen} onClick={() => setPracticeOpen(v => !v)}>
                 Practice Areas
@@ -40,7 +40,7 @@ export function SiteHeader() {
               </button>
               <div className={practiceOpen ? "absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3" : "pointer-events-none invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100"}>
                 <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-2 shadow-[0_18px_45px_rgba(23,37,34,0.12)]">
-                  <Link to="/practice-areas" onClick={() => setPracticeOpen(false)} className="block rounded-xl px-4 py-3 text-sm font-semibold text-[#172522] hover:bg-[#ece9e1]">All Practice Areas</Link>
+                  <Link to="/practice-areas" onClick={() =>SetPracticeOpen(False)} ClassName="Block Rounded-xl Px-4 Py-3 Text-sm Font-semibold Text-[#172522] Hover:Bg-[#Ece9e1]">All Practice Areas</Link>
                   {[
                     ["Business", "/business"], ["Real Estate", "/real-estate"], ["Estate Planning", "/estate-planning"], ["Probate", "/probate"], ["Civil Litigation", "/civil-litigation"],
                   ].map(([label, href]) => <Link key={href} to={href} onClick={() => setPracticeOpen(false)} className="block rounded-xl px-4 py-2.5 text-sm text-[#4d5955] hover:bg-[#ece9e1] hover:text-[#172522]">{label}</Link>)}
@@ -59,14 +59,14 @@ export function SiteHeader() {
           </div>
         </div>
         {menuOpen && (
-          <nav className="grid border-t border-[#172522]/10 bg-[#f7f5f0] px-5 py-3 lg:hidden" aria-label="Mobile navigation">
+          <nav className="grid border-t border-[#172522]/10 bg-[#f7f5f0] px-5 py-3 lg:hidden" aria-label="Mobile Navigation">
             <button type="button" onClick={() => setPracticeOpen(v => !v)} className="flex items-center justify-between border-b border-[#172522]/10 py-4 text-left text-sm font-medium text-[#34413d]" aria-expanded={practiceOpen}>
               Practice Areas
               <ChevronDown className={practiceOpen ? "h-4 w-4 rotate-180 transition-transform" : "h-4 w-4 transition-transform"} />
             </button>
             {practiceOpen && (
               <div className="border-b border-[#172522]/10 pb-2 pl-4">
-                <Link to="/practice-areas" onClick={() => setMenuOpen(false)} className="block py-3 text-sm font-semibold text-[#172522]">All Practice Areas</Link>
+                <Link to="/practice-areas" onClick={() =>SetMenuOpen(False)} ClassName="Block Py-3 Text-sm Font-semibold Text-[#172522]">All Practice Areas</Link>
                 {[
                   ["Business", "/business"], ["Real Estate", "/real-estate"], ["Estate Planning", "/estate-planning"], ["Probate", "/probate"], ["Civil Litigation", "/civil-litigation"],
                 ].map(([label, href]) => <Link key={href} to={href} onClick={() => setMenuOpen(false)} className="block py-2.5 text-sm text-[#4d5955]">{label}</Link>)}
@@ -75,7 +75,7 @@ export function SiteHeader() {
             {nav.slice(1).map(([label, href]) => (
               <Link key={href} to={href} onClick={() => setMenuOpen(false)} className="border-b border-[#172522]/10 py-4 text-sm font-medium text-[#34413d] last:border-0">{label}</Link>
             ))}
-            <Link to="/contact" onClick={() => setMenuOpen(false)} className="mt-2 inline-flex items-center justify-center rounded-full bg-[#b48a45] px-5 py-3 text-sm font-semibold text-white">Start a Conversation</Link>
+            <Link to="/contact" onClick={() =>SetMenuOpen(False)} ClassName="Mt-2 Inline-flex Items-center Justify-center Rounded-full Bg-[#B48a45] Px-5 Py-3 Text-sm Font-semibold Text-white">Start a Conversation</Link>
             <a href="tel:8476929900" className="flex items-center gap-2 py-4 text-sm font-semibold text-[#9a6f2e]"><Phone className="h-4 w-4" /> (847) 692-9900</a>
           </nav>
         )}
@@ -137,7 +137,7 @@ export function PracticeAreaPage({
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
       <SiteHeader />
-      <PageHero eyebrow="Practice area" title={title} text={heroText} imageUrl={imageUrl} imageAlt={imageAlt} />
+      <PageHero eyebrow="Practice Area" title={title} text={heroText} imageUrl={imageUrl} imageAlt={imageAlt} />
       <main>
         <section className="bg-white">
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
@@ -162,7 +162,7 @@ export function PracticeAreaPage({
                 <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
                   <div>
                     <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">When clients typically call</p>
-                    <h3 className="mt-2 font-display text-2xl font-bold leading-tight text-[#172522] sm:text-3xl">Know when it is worth bringing us in.</h3>
+                    <h3 className="mt-2 font-display text-2xl font-bold leading-tight text-[#172522] sm:text-3xl">Know When It Is Worth Bringing Us In</h3>
                   </div>
                   <div className="grid gap-3 sm:grid-cols-3">
                     {reasons.map((reason, index) => (
@@ -180,7 +180,7 @@ export function PracticeAreaPage({
               <div className="mt-20 border-t border-[#172522]/10 pt-14 lg:col-span-2">
                 <div className="max-w-2xl">
                   <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">A closer look</p>
-                  <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">The details depend on the situation.</h3>
+                  <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">The Details Depend on the Situation</h3>
                   <p className="mt-3 text-sm leading-7 text-[#68736f]">Every matter has its own facts, documents, timing, and priorities. These are some of the issues that may deserve attention.</p>
                 </div>
                 <div className="mt-7 grid gap-4 md:grid-cols-2">
@@ -198,7 +198,7 @@ export function PracticeAreaPage({
               <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">How we can help</p>
-                  <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">Matters we handle</h3>
+                  <h3 className="mt-2 font-display text-2xl font-bold text-[#172522]">Matters We Handle</h3>
                 </div>
                 <p className="max-w-xl text-sm leading-6 text-[#68736f]">A focused range of legal matters, with advice tailored to the facts and practical goals of the situation.</p>
               </div>
@@ -222,7 +222,7 @@ export function PracticeAreaPage({
             <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
               <div className="max-w-2xl">
                 <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Working together</p>
-                <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522]">A practical process from the first conversation forward.</h2>
+                <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522]">A Practical Process From the First Conversation Forward</h2>
               </div>
               <div className="relative mt-10 grid gap-4 md:grid-cols-3">
                 {process.map((step, index) => (
@@ -246,7 +246,7 @@ export function PracticeAreaPage({
                 <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60">Start a conversation with the office to discuss your situation and possible next steps.</p>
               </div>
               <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
-                <Link to="/contact" className="inline-flex items-center justify-center rounded-full bg-[#b48a45] px-5 py-3 text-sm font-semibold text-white">Contact the office</Link>
+                <Link to="/contact" className="inline-flex items-center justify-center rounded-full bg-[#b48a45] px-5 py-3 text-sm font-semibold text-white">Contact the Office</Link>
                 <a href="tel:8476929900" className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/85">(847) 692-9900</a>
               </div>
             </div>
@@ -264,7 +264,7 @@ export function PracticeAreaPage({
                 ))}
               </div>
             </div>
-                        <Link to="/practice-areas" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">← All practice areas</Link>
+                        <Link to="/practice-areas" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a]">← All Practice Areas</Link>
           </div>
         </section>
       </main>
@@ -295,19 +295,19 @@ export function SiteFooter() {
               <p>1410 Higgins Road, Suite 204</p>
               <p>Park Ridge, IL 60068</p>
               <a className="mt-2 inline-block text-[#d7b56d] hover:text-white" href="tel:8476929900">(847) 692-9900</a>
-              <a className="mt-1 block text-white/55 hover:text-white" href="mailto:tom@gregorylawoffices.com">tom@gregorylawoffices.com</a>
+              <a className="mt-1 block text-white/55 hover:text-white" href="mailto:tom@gregorylawoffices.com">Tom@Gregorylawoffices.com</a>
               <p className="mt-3 text-xs text-white/40">Monday–Friday · 8:30 am–5:00 pm</p>
             </div>
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#d7b56d]">Explore</p>
-            <nav className="mt-4 grid grid-cols-2 gap-x-6 gap-y-3 text-sm" aria-label="Footer navigation">
+            <nav className="mt-4 grid grid-cols-2 gap-x-6 gap-y-3 text-sm" aria-label="Footer Navigation">
               {links.slice(0, 4).map(([label, href]) => <Link key={href} to={href} className="hover:text-white">{label}</Link>)}
             </nav>
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#d7b56d]">Legal</p>
-            <nav className="mt-4 grid gap-3 text-sm" aria-label="Legal navigation">
+            <nav className="mt-4 grid gap-3 text-sm" aria-label="Legal Navigation">
               {links.slice(4).map(([label, href]) => <Link key={href} to={href} className="hover:text-white">{label}</Link>)}
             </nav>
           </div>
@@ -321,6 +321,6 @@ export function SiteFooter() {
   );
 }
 
-export function CTA({ title = "Have a legal question?" }: { title?: string }) {
+export function CTA({ title="Have a Legal Question?" }: { title?: string }) {
   return <section className="bg-[#e9e0cd]"><div className="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-14 sm:px-8 md:flex-row md:items-center md:justify-between"><div><p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Have a legal question?</p><h2 className="mt-2 font-display text-3xl font-bold text-[#172522]">{title}</h2></div><Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#b48a45] px-6 py-3 font-semibold text-white">Start a conversation <span aria-hidden="true">→</span></Link></div></section>;
 }
