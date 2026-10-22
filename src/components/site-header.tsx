@@ -28,7 +28,7 @@ export function SiteHeader() {
           <Link to="/" className="flex items-center gap-3" aria-label="Gregory Law Offices home">
             <img src={logo} alt="Gregory Law Offices logo" className="h-12 w-12 object-contain" width={102} height={106} />
             <span className="leading-tight">
-              <span className="block font-display text-lg font-bold tracking-[-0.02em] text-[#172522]">Gregory Law Offices</span>
+              <span className="block font-display text-lg font-bold tracking-[-0.02em] text-[#172522]">Gregory Law Offices, Ltd.</span>
               <span className="block text-[10px] font-semibold uppercase tracking-[0.16em] text-[#9a6f2e]">Park Ridge · Illinois</span>
             </span>
           </Link>
