@@ -1,0 +1,45 @@
+name: Package and lint Gregory Law WordPress theme
+
+on:
+  push:
+    branches:
+      - wordpress-custom-theme
+    paths:
+      - "wordpress-theme/gregory-law/**"
+      - ".github/workflows/package-wordpress-theme.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out theme
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathai/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: none
+      - name: Lint PHP templates
+        shell: bash
+        run: |
+          set -euo pipefail
+          find wordpress-theme/gregory-law -type f -name '*.php' -print0 | while IFS= read -r -d '' file; do
+            echo "Checking $file"
+            php -l "$file"
+          done
+      - name: Package installable theme ZIP
+        run: |
+          mkdir -p dist
+          cd wordpress-theme
+          zip -r ../dist/gregory-law-wordpress-theme.zip gregory-law
+      - name: Upload theme ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: gregory-law-wordpress-theme
+          path: dist/gregory-law-wordpress-theme.zip
+          if-no-files-found: error
+          retention-days: 30
