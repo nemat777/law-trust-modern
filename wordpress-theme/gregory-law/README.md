@@ -1,18 +1,32 @@
-# Gregory Law Offices — WordPress custom theme
+# Gregory Law Offices — IONOS WordPress theme
 
-This is the initial custom-theme scaffold for Option A: moving the existing React/TanStack Start site into a traditional WordPress theme. It lives on the separate `wordpress-custom-theme` branch; the current Cloudflare Pages site and `modern-welcoming-refresh` branch are untouched.
+This is a custom classic WordPress theme based on the current Gregory Law Offices website design. It is being prepared on the separate `wordpress-custom-theme` branch. The Cloudflare-hosted website and `modern-welcoming-refresh` branch have not been changed by these theme edits.
 
-## Install in a WordPress staging site
-1. Download this `gregory-law` folder from the `wordpress-custom-theme` branch and ZIP the folder itself (the ZIP should contain `style.css`, `functions.php`, `header.php`, etc. at its root).
-2. In WordPress, open **Appearance → Themes → Add New Theme → Upload Theme** and upload the ZIP.
-3. Activate only in staging first. Do not switch the live domain yet.
-4. Set the logo under **Appearance → Customize → Site Identity**.
-5. Verify phone, address, office hours, homepage headline, and homepage intro under **Appearance → Customize → Gregory Law Contact Details**.
-6. Create a navigation menu under **Appearance → Menus** and assign it to **Primary Navigation**.
-7. Add practice area entries using the **Practice Areas** dashboard menu. Create regular pages for About Tom, Contact, Client Resources, Business, Real Estate, Estate Planning, Probate, and Civil Litigation as appropriate.
-8. Set **Settings → Permalinks → Post name**, then save.
+## What is included
 
-## Current status — not production-ready
-This is a starter theme, not a completed pixel-perfect migration. It establishes a responsive visual system, shared header/footer, homepage starter layout, ordinary page templates, and editable practice-area content. The existing React route content and all original section-level layouts have not yet been fully ported; the homepage copy is provisional. The logo must be uploaded via WordPress Site Identity. The client-resource/payment link and contact form must be recreated and tested, and all URLs, SEO metadata, mobile layouts, and content must be compared with the current site before launch.
+- Responsive header, mobile menu, footer, homepage, standard page template, practice-area detail pages, and practice-area archive.
+- Brand colors, serif/sans-serif typography, section cards, calls to action, and responsive styling inspired by the existing site.
+- Editable WordPress Practice Areas content type, including title, description, excerpt, featured image, and display order.
+- Customizer fields for office phone, email, address, hours, homepage headline, and homepage introduction.
+- A contact form template that submits through WordPress mail. **Mail delivery is not confirmed**; it must be tested with IONOS and configured SMTP if needed before launch.
+- The theme uses the homepage's featured image for the attorney portrait. Upload the firm's approved portrait and logo into WordPress Media Library; set the logo through **Appearance → Customize → Site Identity** and set the portrait as the Home page's featured image.
 
-Keep Cloudflare Pages online until the WordPress staging site has been reviewed and verified. No domain, DNS, or live hosting settings have been changed by this theme scaffold.
+## Installation — when the IONOS hosting plan is confirmed compatible
+
+1. Download the `wordpress-theme/gregory-law` folder from this branch.
+2. Zip the contents so `style.css`, `functions.php`, `header.php`, and the other theme files sit directly at the ZIP root (not inside an extra nested folder).
+3. In the WordPress dashboard, go to **Appearance → Themes → Add New Theme → Upload Theme**, upload the ZIP, and activate it on a staging site first.
+4. Under **Appearance → Customize → Site Identity**, set the site title and upload the official logo. Set the Home page's featured image to the approved attorney portrait.
+5. Under **Appearance → Customize → Gregory Law Contact & Homepage**, verify the phone, email, address, office hours, homepage headline, and intro.
+6. Under **Pages**, create pages for Home, Practice Areas, About, Contact, Client Resources, Business, Real Estate, Estate Planning, Probate, and Civil Litigation as appropriate. Set the Home page under **Settings → Reading**.
+7. Add practice-area entries in the new **Practice Areas** dashboard section. Enter the actual page copy and excerpts; use page ordering to control display order.
+8. Create a navigation menu under **Appearance → Menus** and assign it to **Primary Navigation**.
+9. Under **Settings → Permalinks**, select **Post name** and save. Confirm the practice area URLs do not conflict with regular pages.
+10. Test the contact form end-to-end and confirm messages reach the firm's inbox. If they do not, configure a reputable SMTP plugin/provider and retest.
+11. Compare every page against the current public site, check mobile and desktop layouts, confirm client-resource/payment destinations, add SEO metadata, and test all links before changing the domain or DNS.
+
+## Important limitations before launch
+
+This is a working theme foundation, not yet a verified pixel-perfect migration. The theme styling and primary templates have been developed, but WordPress page content still has to be entered and compared with the current site. The original logo and attorney portrait are not embedded in the theme package; upload the firm's approved assets in WordPress. The contact form depends on the host's mail delivery and has not been tested against the firm's inbox. Existing client-resource/payment integrations, SEO settings, redirects, analytics, and domain/DNS migration must be checked separately.
+
+Do not turn off the current Cloudflare-hosted site or change DNS until the WordPress version is installed, reviewed, and tested. No live hosting or DNS settings have been changed by these theme edits.
