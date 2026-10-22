@@ -44,7 +44,7 @@ const practices = [
     icon: BriefcaseBusiness,
     title: "Business",
     kicker: "Transactions & formation",
-    text: "Entity formation, contracts, acquisitions, and the legal decisions that keep a business moving.",
+    text: "Entity formation, contracts, mergers and acquisitions, and the legal decisions that keep a business moving.",
     href: "/business",
   },
   {
@@ -95,7 +95,7 @@ function Index() {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-[#b48a45]/30 bg-white/70 px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#80602b] shadow-sm">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#b48a45]" />
-                21+ years of Illinois legal experience
+                More than 25 years of Illinois legal experience
               </div>
 
               <h1 className="mt-7 max-w-3xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.035em] text-[#172522] sm:text-6xl lg:text-[4.8rem]">
@@ -117,7 +117,7 @@ function Index() {
               </div>
 
               <div className="mt-11 grid max-w-xl grid-cols-3 gap-4 border-t border-[#172522]/10 pt-6">
-                <Metric value="21+" label="Years of experience" />
+                <Metric value="25+" label="Years of experience" />
                 <Metric value="3" label="Illinois court levels" />
                 <Metric value="1:1" label="Personal attention" />
               </div>
@@ -252,7 +252,7 @@ function Index() {
               </div>
               <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
                 <p className="font-display text-lg font-bold text-[#172522]">Illinois experience</p>
-                <p className="mt-2 text-sm leading-6 text-[#68736f]">More than 21 years of legal experience, including matters at three levels of Illinois courts.</p>
+                <p className="mt-2 text-sm leading-6 text-[#68736f]">More than 25 years of legal experience, including matters at three levels of Illinois courts.</p>
               </div>
               <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
                 <p className="font-display text-lg font-bold text-[#172522]">Park Ridge office</p>
@@ -307,11 +307,11 @@ function Index() {
                 You should not have to navigate a complicated legal issue without knowing who is on the other side of the phone.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-7 text-[#68736f]">
-                A John Marshall Law School graduate with more than 21 years of legal experience, Tom represents Illinois businesses, property owners, and families with direct, attentive counsel. His experience includes matters at the Circuit Court, Appellate Court, and Illinois Supreme Court levels.
+                A John Marshall Law School graduate with more than 25 years of legal experience, Tom represents Illinois businesses, property owners, and families with direct, attentive counsel. His experience includes matters at the Circuit Court, Appellate Court, and Illinois Supreme Court levels.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                <AttorneyStat value="21+" label="Years of experience" />
+                <AttorneyStat value="25+" label="Years of experience" />
                 <AttorneyStat value="3" label="Illinois court levels" />
                 <AttorneyStat value="JMLS" label="Legal education" />
               </div>
