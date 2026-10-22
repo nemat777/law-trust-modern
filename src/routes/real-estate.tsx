@@ -15,7 +15,7 @@ function RealEstate() {
     heroText="Practical legal guidance for property transactions, ownership questions, leases, closings, and disputes."
     introTitle="Property decisions deserve careful review."
     introText="Real estate documents can carry long-term consequences. Gregory Law Offices approaches transactions and disputes with attention to the documents, deadlines, practical objectives, and issues that can affect your position."
-    matters={["Purchases and sales", "Leases and landlord-tenant matters", "Closings and transaction documents", "Real estate disputes", "Ownership and title questions", "Other property-related matters"]}
+    matters={["Purchases and Sales", "Leases and Landlord-Tenant Matters", "Closings and Transaction Documents", "Real Estate Disputes", "Ownership and Title Questions", "Other Property-Related Matters"]}
     reasons={["You are buying, selling, leasing, or otherwise changing an interest in property.","A closing, title issue, lease term, or document raises a question you want reviewed.","A property disagreement is becoming difficult to resolve on your own."]}
     considerations={["Purchase or sale terms, contingencies, title issues, and the documents required to move the transaction forward.","Lease provisions that affect responsibilities, remedies, timing, and the practical relationship between the parties.","Ownership and title questions that may affect how property is held, transferred, or used.","The documents, communications, and history surrounding a property dispute."]}
     process={[
