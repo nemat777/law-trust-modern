@@ -135,7 +135,7 @@ function Index() {
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#172522] via-[#172522]/75 to-transparent px-6 pb-6 pt-20 text-white sm:px-8 sm:pb-8">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#d7b56d]">Tom P. Gregory, Esq.</p>
-                    <p className="mt-2 font-display text-2xl font-bold sm:text-3xl">Experienced counsel. Straightforward advice.</p>
+                    <p className="mt-2 font-display text-2xl font-bold sm:text-3xl">Experienced Counsel. Straightforward Advice</p>
                   </div>
                 </div>
               </div>
@@ -221,7 +221,7 @@ function Index() {
                 Gregory Law Offices is intentionally structured around a direct attorney-client relationship. You know who is handling your matter, where the office is, and how to reach us when a question needs an answer.
               </p>
               <div className="mt-7 flex flex-wrap gap-2 text-xs font-semibold text-[#5d6964]">
-                <span className="rounded-full border border-[#172522]/10 bg-[#f7f5f0] px-4 py-2">Park Ridge office</span>
+                <span className="rounded-full border border-[#172522]/10 bg-[#f7f5f0] px-4 py-2">Park Ridge Office</span>
                 <span className="rounded-full border border-[#172522]/10 bg-[#f7f5f0] px-4 py-2">Direct communication</span>
                 <span className="rounded-full border border-[#172522]/10 bg-[#f7f5f0] px-4 py-2">Illinois counsel</span>
               </div>
@@ -243,19 +243,19 @@ function Index() {
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
-                <p className="font-display text-lg font-bold text-[#172522]">One attorney, one relationship</p>
+                <p className="font-display text-lg font-bold text-[#172522]">One Attorney, One Relationship</p>
                 <p className="mt-2 text-sm leading-6 text-[#68736f]">A personal point of contact for questions, decisions, and next steps.</p>
               </div>
               <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
-                <p className="font-display text-lg font-bold text-[#172522]">Focused practice</p>
+                <p className="font-display text-lg font-bold text-[#172522]">Focused Practice</p>
                 <p className="mt-2 text-sm leading-6 text-[#68736f]">Five core areas that cover business, property, planning, probate, and civil disputes.</p>
               </div>
               <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
-                <p className="font-display text-lg font-bold text-[#172522]">Illinois experience</p>
+                <p className="font-display text-lg font-bold text-[#172522]">Illinois Experience</p>
                 <p className="mt-2 text-sm leading-6 text-[#68736f]">More than 25 years of legal experience, including matters at three levels of Illinois courts.</p>
               </div>
               <div className="rounded-2xl border border-[#172522]/10 bg-[#f7f5f0] p-5">
-                <p className="font-display text-lg font-bold text-[#172522]">Park Ridge office</p>
+                <p className="font-display text-lg font-bold text-[#172522]">Park Ridge Office</p>
                 <p className="mt-2 text-sm leading-6 text-[#68736f]">A local office serving clients throughout Illinois.</p>
               </div>
             </div>
