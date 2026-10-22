@@ -24,7 +24,7 @@ export function SiteFooter() {
   );
 }
 
-export function CTA({ title = "Let’s talk about what’s next.", text = "Tell us a little about what you are facing and we can discuss possible next steps." }: { title?: string; text?: string }) {
+export function CTA({ title="Let’s Talk About What’s Next", text = "Tell us a little about what you are facing and we can discuss possible next steps." }: { title?: string; text?: string }) {
   return (
     <section className="bg-[#172522] text-white">
       <div className="mx-auto flex max-w-7xl flex-col gap-7 px-5 py-16 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:py-20">
