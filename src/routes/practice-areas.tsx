@@ -43,8 +43,8 @@ function PracticeAreas() {
     <div className="min-h-screen bg-[#f7f5f0] text-[#18211f] antialiased">
       <SiteHeader />
       <PageHero
-        eyebrow="How we help"
-        title="Legal help for the moments that matter."
+        eyebrow="How We Help"
+        title="Legal Help for the Moments That Matter"
         text="Explore the firm's five core practice areas and find the type of legal guidance that fits your situation."
       />
 
@@ -53,7 +53,7 @@ function PracticeAreas() {
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
             <div className="max-w-2xl">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Our practice areas</p>
-              <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Five areas, clearly organized.</h2>
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Five Areas, Clearly Organized</h2>
               <p className="mt-5 text-base leading-8 text-[#63706b]">
                 Whether you are building a business, making a property decision, planning for the future, settling an estate, or addressing a dispute, start with the area that best matches your matter.
               </p>
@@ -95,7 +95,7 @@ function PracticeAreas() {
         </section>
       </main>
 
-      <CTA title="Not sure where your matter fits?" />
+      <CTA title="Not Sure Where Your Matter Fits?" />
       <SiteFooter />
     </div>
   );
