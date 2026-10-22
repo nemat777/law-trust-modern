@@ -43,35 +43,35 @@ const practices = [
   {
     icon: BriefcaseBusiness,
     title: "Business",
-    kicker: "Transactions & formation",
+    kicker: "Transactions & Formation",
     text: "Entity formation, contracts, mergers and acquisitions, and the legal decisions that keep a business moving.",
     href: "/business",
   },
   {
     icon: Building2,
     title: "Real Estate",
-    kicker: "Property & transactions",
+    kicker: "Property & Transactions",
     text: "Purchases, sales, leases, closings, and property disputes handled with practical attention to detail.",
     href: "/real-estate",
   },
   {
     icon: FileText,
     title: "Estate Planning",
-    kicker: "Planning for what matters",
+    kicker: "Planning for What Matters",
     text: "Wills, trusts, powers of attorney, and thoughtful plans built around your family and priorities.",
     href: "/estate-planning",
   },
   {
     icon: Landmark,
     title: "Probate",
-    kicker: "Guidance for families",
+    kicker: "Guidance for Families",
     text: "Steady guidance for executors, administrators, beneficiaries, and families through probate.",
     href: "/probate",
   },
   {
     icon: Scale,
     title: "Civil Litigation",
-    kicker: "Disputes & advocacy",
+    kicker: "Disputes & Advocacy",
     text: "Focused representation in business, contract, real estate, and other civil disputes.",
     href: "/civil-litigation",
   },
@@ -99,8 +99,8 @@ function Index() {
               </div>
 
               <h1 className="mt-7 max-w-3xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.035em] text-[#172522] sm:text-6xl lg:text-[4.8rem]">
-                Good legal counsel should feel{" "}
-                <span className="italic font-normal text-[#9a6f2e]">personal.</span>
+                Good Legal Counsel Should Feel{" "}
+                <span className="italic font-normal text-[#9a6f2e]">Personal.</span>
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-[#53605c] sm:text-xl">
@@ -117,9 +117,9 @@ function Index() {
               </div>
 
               <div className="mt-11 grid max-w-xl grid-cols-3 gap-4 border-t border-[#172522]/10 pt-6">
-                <Metric value="25+" label="Years of experience" />
-                <Metric value="3" label="Illinois court levels" />
-                <Metric value="1:1" label="Personal attention" />
+                <Metric value="25+" label="Years of Experience" />
+                <Metric value="3" label="Illinois Court Levels" />
+                <Metric value="1:1" label="Personal Attention" />
               </div>
             </div>
 
@@ -148,7 +148,7 @@ function Index() {
             <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">How we help</p>
-                <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Legal help for the moments that matter.</h2>
+                <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Legal Help for the Moments That Matter</h2>
               </div>
               <p className="max-w-xl text-base leading-7 text-[#63706b] lg:justify-self-end">
                 Whether you are building something, protecting something, planning ahead, or resolving a dispute, the goal is the same: understand the situation and know what to do next.
@@ -184,7 +184,7 @@ function Index() {
             <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Who we help</p>
-                <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Counsel for the decisions behind the day-to-day.</h2>
+                <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Counsel for the Decisions Behind the Day-to-Day</h2>
               </div>
               <p className="max-w-xl text-base leading-7 text-[#63706b] lg:justify-self-end">Legal questions often arrive in the middle of a larger decision. The firm works with people and organizations who need practical guidance on what the law means for that decision.</p>
             </div>
@@ -216,7 +216,7 @@ function Index() {
             </div>
             <div className="max-w-xl lg:pl-6">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">A local practice, by design</p>
-              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Personal attention starts with knowing who you are calling.</h2>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">Personal Attention Starts With Knowing Who You Are Calling</h2>
               <p className="mt-5 text-base leading-7 text-[#63706b]">
                 Gregory Law Offices is intentionally structured around a direct attorney-client relationship. You know who is handling your matter, where the office is, and how to reach us when a question needs an answer.
               </p>
@@ -236,7 +236,7 @@ function Index() {
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:py-20">
             <div className="max-w-xl">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Why Gregory Law Offices</p>
-              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">A small firm, with your matter in view.</h2>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] text-[#172522] sm:text-5xl">A Small Firm, With Your Matter in View</h2>
               <p className="mt-5 text-base leading-7 text-[#63706b]">
                 The firm works with clients on the legal issues that sit behind important business, property, estate, and dispute-related decisions. The emphasis is on understanding the matter, preparing carefully, and giving clients a clear sense of the choices ahead.
               </p>
@@ -267,7 +267,7 @@ function Index() {
             <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Our approach</p>
-                <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Clarity before action.</h2>
+                <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Clarity Before Action</h2>
               </div>
               <div className="grid gap-5 md:grid-cols-3">
                 {[
@@ -311,9 +311,9 @@ function Index() {
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                <AttorneyStat value="25+" label="Years of experience" />
-                <AttorneyStat value="3" label="Illinois court levels" />
-                <AttorneyStat value="JMLS" label="Legal education" />
+                <AttorneyStat value="25+" label="Years of Experience" />
+                <AttorneyStat value="3" label="Illinois Court Levels" />
+                <AttorneyStat value="JMLS" label="Legal Education" />
               </div>
 
               <a href="/about" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#8b642a] hover:text-[#b48a45]">
@@ -327,7 +327,7 @@ function Index() {
           <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:py-24">
             <div className="lg:pt-5">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#d7b56d]">Start here</p>
-              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] sm:text-5xl">Let’s talk about what’s next.</h2>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.025em] sm:text-5xl">Let’s Talk About What’s Next</h2>
               <p className="mt-6 max-w-md text-base leading-7 text-white/65">
                 Tell us a little about what you are facing. We will use the information to understand how we may be able to help and discuss next steps.
               </p>
@@ -348,23 +348,23 @@ function Index() {
               {submitted ? (
                 <div className="flex min-h-[420px] flex-col items-center justify-center text-center">
                   <span className="grid h-14 w-14 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e]"><Check className="h-7 w-7" /></span>
-                  <h2 className="mt-6 font-display text-3xl font-bold text-[#172522]">Thanks for reaching out.</h2>
+                  <h2 className="mt-6 font-display text-3xl font-bold text-[#172522]">Thank You for Reaching Out</h2>
                   <p className="mt-3 max-w-md text-sm leading-6 text-[#68736f]">This form is currently a demonstration and should be connected to the firm's preferred inbox before publishing.</p>
-                  <Button type="button" variant="outline" className="mt-6 rounded-full" onClick={() => setSubmitted(false)}>Send another request</Button>
+                  <Button type="button" variant="outline" className="mt-6 rounded-full" onClick={() =>SetSubmitted(False)}>Send Another Request</Button>
                 </div>
               ) : (
                 <>
                   <div className="border-b border-[#172522]/10 pb-5">
                     <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Start here</p>
-                    <h2 className="mt-2 font-display text-3xl font-bold text-[#172522]">Request a consultation</h2>
+                    <h2 className="mt-2 font-display text-3xl font-bold text-[#172522]">Request a Consultation</h2>
                     <p className="mt-2 max-w-xl text-sm leading-6 text-[#68736f]">Tell us a little about what you need. The office will follow up to discuss the matter and next steps.</p>
                   </div>
                   <div className="mt-6 grid gap-5 sm:grid-cols-2">
-                    <Field label="Full name"><input required name="name" autoComplete="name" placeholder="Your name" className="field-light" /></Field>
+                    <Field label="Full Name"><input required name="name" autoComplete="name" placeholder="Your name" className="field-light" /></Field>
                     <Field label="Phone"><input required name="phone" type="tel" autoComplete="tel" placeholder="(847) 000-0000" className="field-light" /></Field>
                     <Field label="Email"><input required name="email" type="email" autoComplete="email" placeholder="you@example.com" className="field-light" /></Field>
-                    <Field label="Practice area"><select required name="practice" defaultValue="" className="field-light"><option value="" disabled>Select an area</option>{practices.map((practice) => <option key={practice.title}>{practice.title}</option>)}</select></Field>
-                    <div className="sm:col-span-2"><Field label="Briefly describe your matter"><textarea required name="message" rows={4} placeholder="Please avoid including highly sensitive information." className="field-light resize-none" /></Field></div>
+                    <Field label="Practice Area"><select required name="practice" defaultValue="" className="field-light"><option value="" disabled>Select an area</option>{practices.map((practice) => <option key={practice.title}>{practice.title}</option>)}</select></Field>
+                    <div className="sm:col-span-2"><Field label="Briefly Describe Your Matter"><textarea required name="message" rows={4} placeholder="Please avoid including highly sensitive information." className="field-light resize-none" /></Field></div>
                   </div>
                   <div className="mt-6 flex flex-col gap-3 border-t border-[#172522]/10 pt-5 sm:flex-row sm:items-center sm:justify-between">
                     <p className="max-w-sm text-[11px] leading-5 text-[#7b8580]">Submitting this form does not create an attorney-client relationship.</p>
