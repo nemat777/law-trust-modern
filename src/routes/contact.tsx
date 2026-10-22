@@ -22,7 +22,7 @@ function Contact() {
       <SiteHeader />
       <PageHero
         eyebrow="Contact"
-        title="Start with a conversation."
+        title="Start With a Conversation."
         text="Call the office or send a brief message about the matter you would like to discuss."
       />
 
@@ -32,9 +32,7 @@ function Contact() {
             <div>
               <div className="mb-7 max-w-md">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">Get in touch</p>
-                <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">
-                  Reach the office directly.
-                </h2>
+                <h2 className="mt-3 font-display text-3xl font-bold tracking-[-0.025em] text-[#172522] sm:text-4xl">Reach the Office Directly.</h2>
                 <p className="mt-4 text-base leading-7 text-[#63706b]">
                   Call, email, or visit the Park Ridge office to begin a conversation about your matter.
                 </p>
@@ -71,7 +69,7 @@ function Contact() {
               {sent ? (
                 <div className="flex min-h-[420px] flex-col items-center justify-center text-center">
                   <span className="grid h-14 w-14 place-items-center rounded-full bg-[#efe7d6] text-[#9a6f2e]">✓</span>
-                  <h2 className="mt-6 font-display text-3xl font-bold text-[#172522]">Thanks for reaching out.</h2>
+                  <h2 className="mt-6 font-display text-3xl font-bold text-[#172522]">Thanks for Reaching Out.</h2>
                   <p className="mt-3 max-w-md text-sm leading-6 text-[#68736f]">
                     This form is currently a demonstration and should be connected to the firm's preferred inbox before publishing.
                   </p>
@@ -80,7 +78,7 @@ function Contact() {
                 <>
                   <div className="border-b border-[#172522]/10 pb-5">
                     <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9a6f2e]">Start here</p>
-                    <h2 className="mt-2 font-display text-3xl font-bold text-[#172522]">Request a consultation</h2>
+                    <h2 className="mt-2 font-display text-3xl font-bold text-[#172522]">Request a Consultation</h2>
                     <p className="mt-2 max-w-xl text-sm leading-6 text-[#68736f]">
                       Tell us a little about what you need. The office will follow up to discuss the matter and next steps.
                     </p>
@@ -121,7 +119,7 @@ function Contact() {
           <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:py-16">
             <div className="mb-8 max-w-2xl">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#9a6f2e]">What happens next</p>
-              <h2 className="mt-3 font-display text-3xl font-bold text-[#172522] sm:text-4xl">A simple process.</h2>
+              <h2 className="mt-3 font-display text-3xl font-bold text-[#172522] sm:text-4xl">A Simple Process.</h2>
             </div>
             <div className="grid gap-8 md:grid-cols-3">
               {[
