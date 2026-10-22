@@ -15,7 +15,7 @@ function Probate() {
     heroText="Probate can bring legal, financial, and family questions at the same time. Clear guidance can make the process easier to understand."
     introTitle="A clear path for families and fiduciaries."
     introText="Gregory Law Offices assists executors, administrators, beneficiaries, and families with the legal work involved in administering an estate and addressing questions that arise along the way."
-    matters={["Estate administration", "Executor representation", "Administrator representation", "Beneficiary questions", "Estate-related disputes", "Other probate matters"]}
+    matters={["Estate Administration", "Executor Representation", "Administrator Representation", "Beneficiary Questions", "Estate-Related Disputes", "Other Probate Matters"]}
     reasons={["You have been named executor or administrator and need help understanding the process.","You are a beneficiary with questions about an estate or its administration.","A disagreement involving an estate needs to be evaluated and addressed."]}
     considerations={["The responsibilities and practical decisions that come with serving as an executor or administrator.","Questions beneficiaries may have about the estate, its administration, or the distribution process.","Coordinating estate assets, documents, claims, and other matters that need attention during administration.","Disagreements that may require clarification, negotiation, or a more formal legal response."]}
     process={[
