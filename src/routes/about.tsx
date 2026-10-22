@@ -46,10 +46,10 @@ function About() {
                 You should know who is handling your matter, understand the advice you are receiving, and have a clear sense of what comes next.
               </p>
               <p className="mt-5 text-base leading-7 text-[#68736f]">
-                A John Marshall Law School graduate with more than 21 years of legal experience, Tom represents Illinois businesses, property owners, and families. His experience includes matters at the Circuit Court, Appellate Court, and Illinois Supreme Court levels.
+                A John Marshall Law School graduate with more than 25 years of legal experience, Tom represents Illinois businesses, property owners, and families. His experience includes matters at the Circuit Court, Appellate Court, and Illinois Supreme Court levels.
               </p>
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                <div className="rounded-2xl border border-[#172522]/10 bg-white p-4"><p className="font-display text-2xl font-bold text-[#9a6f2e]">21+</p><p className="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-[#69736f]">Years of legal experience</p></div>
+                <div className="rounded-2xl border border-[#172522]/10 bg-white p-4"><p className="font-display text-2xl font-bold text-[#9a6f2e]">25+</p><p className="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-[#69736f]">Years of legal experience</p></div>
                 <div className="rounded-2xl border border-[#172522]/10 bg-white p-4"><p className="font-display text-2xl font-bold text-[#9a6f2e]">3</p><p className="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-[#69736f]">Illinois court levels</p></div>
                 <div className="rounded-2xl border border-[#172522]/10 bg-white p-4"><p className="font-display text-2xl font-bold text-[#9a6f2e]">JMLS</p><p className="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-[#69736f]">Legal education</p></div>
               </div>
