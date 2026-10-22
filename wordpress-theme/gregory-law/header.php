@@ -6,7 +6,7 @@
 <div class="glo-topbar"><div class="glo-container"><span class="glo-location">Park Ridge · Illinois</span><span><?php echo esc_html(gregory_law_hours()); ?></span><a href="<?php echo esc_attr('tel:' . preg_replace('/[^0-9+]/', '', gregory_law_phone())); ?>"><?php echo esc_html(gregory_law_phone()); ?></a></div></div>
 <header class="glo-header"><div class="glo-container glo-header-inner">
 <a class="glo-brand" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Gregory Law Offices, Ltd. home">
-<?php if (has_custom_logo()) { the_custom_logo(); } ?>
+<?php if (has_custom_logo()) { the_custom_logo(); } else { ?><img class="glo-default-logo" src="<?php echo esc_url(get_template_directory_uri() . '/assets/gregory-logo.png'); ?>" alt="" width="48" height="48"><?php } ?>
 <span><span class="glo-brand-name">Gregory Law Offices, Ltd.</span><span class="glo-brand-sub">Park Ridge · Illinois</span></span>
 </a>
 <nav class="glo-nav" aria-label="Main navigation">
